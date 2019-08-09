@@ -17,16 +17,61 @@
 
 <body>
   
-  <h1>Page successfully loaded.</h1>
-  <p>Edit <strong>index.html</strong>, <strong>styles.css</strong> and <strong>index.js</strong> to make sure that gulp's watch task is functioning correctly.</p>
-  <p>You should see icons in the grey boxes. Try running <strong>gulp sprite</strong> if the boxes are empty.</p>
-
-  <div class="social-icons">
-    <a href="" class="social-icons__icon"><span class="icon icon--facebook"></span></a>
-    <a href="" class="social-icons__icon"><span class="icon icon--twitter"></span></a>
-    <a href="" class="social-icons__icon"><span class="icon icon--instagram"></span></a>
-    <a href="" class="social-icons__icon"><span class="icon icon--youtube"></span></a>
+  <div class="hero">
+    <h1 class="hero__heading">Kellie Petersen</h1>
+    <p class="hero__subheading">I design and build <span class="hero__thing">Websites & Applications</span></p>
+    <div class="hero__aside">
+      <div class="hero__icon"></div>
+      <p class="hero__icon-text">Front-End Developer</p>
+    </div>
+    <div class="hero__aside">
+      <div class="hero__icon"></div>
+      <p class="hero__icon-text hero__icon-text--gray">Hobbyist Designer</p>
+    </div>
+    <a href="#contact" class="button button--center button--circle">GET IN TOUCH <div class="button__icon button__arrow"></div></a>
   </div>
+
+  <section class="about" id="about">
+    <h2 class="text__heading">About me.</h2>
+    <div class="about__container">
+      <div class="text__container">
+        <h3 class="text__subheading">Who I am</h3>
+        <p class="text__paragraph">I'm Kellie, a front-end developer who sometimes attempts designing things. I grew up in Yeppoon, Australia.</p>
+        <p class="text__paragraph">I moved to the USA 2 years ago, and I'm currently based in Atlanta, Georgia. I love turning interesting ideas into
+        usable products.</p>
+      </div>
+      <div class="about__image-container">
+        <img src="src/img/kellie.jpg" alt="A photo of Kellie Petersen" class="about__image">
+        <div class="shape__square about__square"></div>
+      </div>
+      <div class="text__container">
+        <h3 class="text__subheading">Where I started</h3>
+        <p class="text__paragraph">I create and design websites and applications. I work on the
+        front-end and occassionally design. I dabble with PHP.</p>
+        <p class="text__paragraph">I'm currently working for Novelle Web & Software, a business I
+        co-founded with my better half.</p>
+      </div>
+      <div class="text__container">
+        <h3 class="text__subheading">What I do</h3>
+        <p class="text__paragraph">I'm currently working for Novelle Web & Software, a business I
+          co-founded with my better half.</p>
+        <p class="text__paragraph">I value creating websites with readable and maintainable code, that are accessible to everyone.</p>
+      </div>
+      <div class="about__city"></div>
+    </div>
+  </section>
+
+  <section class="skills" id="skills">
+    <h2 class="text__heading">My skills.</h2>
+    <div class="skills__container">
+      <div class="text__container">
+        <h3 class="text__subheading">Languages</h3>
+        <p class="text__paragraph">I like working with vanilla code, but I value learning new language tools.
+          I make sure to stay up-to-date with ECMAScript.</p>
+      </div>
+    </div>
+  </section>
+
   
 </body>
 <!-- build:js src/js/index.js -->
