@@ -350,12 +350,20 @@ template {
 }
 
 :root {
-  --black: #000;
+  --black: #252525;
+  --white: #e6e6e6;
+  --gray: #b3b3b3;
+  --dark-gray: #808080;
+  --darkest-gray: #4d4d4d;
+  --purple: #5e37f6;
+  --dark-purple: #5233cc;
+  --aqua: #19f7d9;
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
-  color: #333;
+  font-family: 'Roboto', arial, sans-serif;
+  background-color: var(--black);
+  color: var(--gray);
 }
 
 img {
