@@ -1,0 +1,53 @@
+.hero {
+  width: 100vw;
+  height: 100vh;
+
+  &__container {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  &__heading {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3em;
+    letter-spacing: 1px;
+    margin-bottom: 0;
+  }
+
+  &__subheading {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5em;
+    font-weight: 200;
+    line-height: 1.5;
+    margin: 20px auto;
+  }
+
+  &__subheading-span {
+    display: block;
+    font-weight: 500;
+  }
+
+  &__aside {
+    letter-spacing: 1.5px;
+  }
+
+  &__aside-text {
+    display: inline-block;
+    margin: 6px 10px;
+  }
+
+  &__icon {
+    display: inline-block;
+    width: 25px;
+    height: 20px;
+    border: 2px solid var(--purple);
+    vertical-align: text-bottom;
+  }
+
+  &__button {
+    position: absolute;
+    left: 50%;
+    bottom: 10vh;
+    transform: translateX(-50%);
+  }
+}
