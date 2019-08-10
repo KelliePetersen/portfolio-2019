@@ -1,17 +1,26 @@
 .hero {
   width: 100vw;
   height: 100vh;
+  position: relative;
 
   &__container {
-    width: 90%;
-    margin: 0 auto;
+    margin-left: 6vw;
+    position: absolute;
+    top: 40%;
+    transform: translateY(-40%);
+
+    @mixin atMobile {
+      position: static;
+      transform: none;
+      padding-top: 5vh;
+    }
   }
 
   &__heading {
     font-family: 'Montserrat', sans-serif;
     font-size: 3em;
     letter-spacing: 1px;
-    margin-bottom: 0;
+    margin: 0;
   }
 
   &__subheading {
@@ -20,6 +29,10 @@
     font-weight: 200;
     line-height: 1.5;
     margin: 20px auto;
+
+    @mixin atMobile {
+      margin: 5px auto;
+    }
   }
 
   &__subheading-span {
