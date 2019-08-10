@@ -4,15 +4,14 @@
   position: relative;
 
   &__container {
-    margin-left: 6vw;
+    margin-left: 7.5vw;
     position: absolute;
     top: 40%;
     transform: translateY(-40%);
 
     @mixin atMobile {
-      position: static;
+      top: calc(40vh - 100px);
       transform: none;
-      padding-top: 5vh;
     }
   }
 

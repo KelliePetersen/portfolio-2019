@@ -1,5 +1,37 @@
 .text {
 
+  &__section {
+    margin-bottom: 30vw;
+  }
+
+  &__container {
+    width: 85%;
+    margin: 0 auto;
+  }
+
+  &__heading, &__subheading {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    letter-spacing: 1px;
+  }
+
+  &__heading {
+    font-size: 2.25em;
+    text-align: center;
+    margin-bottom: 15vw;
+  }
+
+  &__subheading {
+    font-size: 1.5em;
+  }
+
+  &__paragraph {
+    font-weight: 300;
+    letter-spacing: 1.5px;
+    line-height: 1.5;
+    color: var(--gray);
+  }
+
   &--dark-gray {
     color: var(--dark-gray);
   }
