@@ -32,6 +32,9 @@
     color: var(--gray);
   }
 
+  &--white {
+    color: var(--white);
+  }
   &--dark-gray {
     color: var(--dark-gray);
   }

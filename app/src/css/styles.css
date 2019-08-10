@@ -6,5 +6,7 @@
 @import "modules/_sprite";
 @import "modules/_text";
 @import "modules/_button";
+@import "modules/_shape";
 @import "sections/_hero";
 @import "sections/_about";
+@import "sections/_skills";

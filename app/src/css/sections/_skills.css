@@ -1,0 +1,15 @@
+.skills {
+
+  &__list {
+    font-size: 0.875em;
+    list-style-type: none;
+    line-height: 1.75;
+    padding-left: 0;
+    width: max-content;
+    display: inline-block;
+  }
+
+  &__list:first-of-type {
+    margin-right: 30px;
+  }
+}

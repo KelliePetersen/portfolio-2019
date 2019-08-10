@@ -467,6 +467,10 @@ img {
     color: var(--gray);
   }
 
+.text--white {
+    color: var(--white);
+  }
+
 .text--dark-gray {
     color: var(--dark-gray);
   }
@@ -498,6 +502,20 @@ img {
 
 .button--center {
     margin: 0 auto;
+  }
+
+.shape__diamond {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-color: var(--purple);
+    margin-right: 10px;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+
+.shape--dark {
+    opacity: 0.5;
   }
 
 .hero {
@@ -609,4 +627,19 @@ img {
     width: 15%;
     height: 15%;
     border: 1px solid var(--purple);
+  }
+
+.skills__list {
+    font-size: 0.875em;
+    list-style-type: none;
+    line-height: 1.75;
+    padding-left: 0;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    display: inline-block;
+  }
+
+.skills__list:first-of-type {
+    margin-right: 30px;
   }
