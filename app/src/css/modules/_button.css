@@ -7,7 +7,7 @@
   font-size: 0.875em;
   letter-spacing: 2px;
   text-decoration: none;
-  border-radius: 15%/50%;
+  border-radius: 12%/50%;
   padding: 20px 30px;
   width: max-content;
 
@@ -22,5 +22,9 @@
 
   &--center {
     margin: 0 auto;
+  }
+
+  &--hidden {
+    display: none;
   }
 }

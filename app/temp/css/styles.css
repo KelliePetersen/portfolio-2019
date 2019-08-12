@@ -453,7 +453,7 @@ img {
 .text__heading {
     font-size: 2.25em;
     text-align: center;
-    margin-bottom: 15vw;
+    margin-bottom: 1.5em;;
   }
 
 .text__subheading {
@@ -467,12 +467,20 @@ img {
     color: var(--gray);
   }
 
+.text--small {
+    font-size: 0.875em;
+  }
+
 .text--white {
     color: var(--white);
   }
 
 .text--dark-gray {
     color: var(--dark-gray);
+  }
+
+.text--hidden {
+    display: none;
   }
 
 .button {
@@ -484,7 +492,7 @@ img {
   font-size: 0.875em;
   letter-spacing: 2px;
   text-decoration: none;
-  border-radius: 15%/50%;
+  border-radius: 12%/50%;
   padding: 20px 30px;
   width: -webkit-max-content;
   width: -moz-max-content;
@@ -504,10 +512,14 @@ img {
     margin: 0 auto;
   }
 
+.button--hidden {
+    display: none;
+  }
+
 .shape__diamond {
     display: inline-block;
-    width: 12px;
-    height: 12px;
+    width: 9px;
+    height: 9px;
     background-color: var(--purple);
     margin-right: 10px;
     -webkit-transform: rotate(45deg);
@@ -565,7 +577,7 @@ img {
 
 .hero__subheading-span {
     display: block;
-    font-weight: 500;
+    font-weight: 400;
   }
 
 .hero__aside {
@@ -642,4 +654,37 @@ img {
 
 .skills__list:first-of-type {
     margin-right: 30px;
+  }
+
+.projects__subheading {
+    margin-bottom: 40px;
+    margin-left: 1em;
+    position: relative;
+  }
+
+.projects__subheading:before {
+    content: '01';
+    font-size: 3em;
+    font-family: 'Nirmala UI', 'Poppins', 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: var(--darkest-gray);
+    opacity: 0.5;
+    position: absolute;
+    top: -0.5em;
+    left: -0.4em;
+  }
+
+.projects__icon {
+    
+    width: 20px;
+    height: 20px;
+    border: 1px solid var(--white);
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+
+.contact__text {
+    max-width: 85%;
+    text-align: center;
+    margin: 0 auto;
   }
