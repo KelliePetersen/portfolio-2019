@@ -1,8 +1,56 @@
 .contact {
 
   &__text {
-    max-width: 85%;
+    width: 85%;
     text-align: center;
+    max-width: 500px;
     margin: 0 auto;
+  }
+
+  &__form {
+    width: 85%;
+    max-width: 650px;
+    margin: 50px auto;
+  }
+
+  &__label {
+    color: var(--gray);
+    font-size: 0.875em;
+    letter-spacing: 0.5px;
+  }
+
+  &__input, &__message {
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: transparent;
+    color: var(--gray);
+  }
+
+  &__input {
+    border: none;
+    border-bottom: solid 2px var(--dark-gray);
+  }
+
+  &__message {
+    margin-top: 5px;
+    border: solid 2px var(--dark-gray);
+  }
+
+  &__submit {
+    border: none;
+    margin: 0 auto 20px auto;
+  }
+
+  &__aside {
+    text-align: center;
+    font-size: 0.875em;
+    color: var(--gray);
+    letter-spacing: 0.5px;
+  }
+
+  &__aside-span {
+    color: var(--white);
+    text-decoration: none;
+    border-bottom: 1px solid var(--white);
   }
 }

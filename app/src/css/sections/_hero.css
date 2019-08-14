@@ -46,5 +46,7 @@
 
   &__link {
     font-weight: 400;
+    text-decoration: none;
+    color: var(--white);
   }
 }

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="8.9562502mm"
+   height="8.1177855mm"
+   viewBox="0 0 8.9562502 8.1177855"
+   version="1.1"
+   id="svg11890"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"
+   sodipodi:docname="kellie-logo.svg">
+  <defs
+     id="defs11884">
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath12492">
+      <rect
+         style="opacity:1;fill:#f2f2f2;fill-opacity:0.56310676;stroke:none;stroke-width:0.26458332;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke markers fill"
+         id="rect12494"
+         width="8.9893522"
+         height="8.1177855"
+         x="3.506757"
+         y="-15.260242" />
+    </clipPath>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="11.313708"
+     inkscape:cx="21.167811"
+     inkscape:cy="20.872633"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="2560"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
+  <metadata
+     id="metadata11887">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(12.335141,15.260242)">
+    <g
+       id="g12464"
+       transform="translate(-15.875)"
+       clip-path="url(#clipPath12492)">
+      <rect
+         transform="matrix(-0.99997212,0.00746731,-0.00172603,-0.99999851,0,0)"
+         style="opacity:1;fill:#d34a4a;fill-opacity:1;stroke:none;stroke-width:0.33458021;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers stroke fill"
+         id="rect13073"
+         width="1.1645832"
+         height="10.111527"
+         x="-4.7327156"
+         y="6.2116084" />
+      <rect
+         y="-16.249235"
+         x="4.5669236"
+         height="9.9954481"
+         width="1.7325611"
+         id="rect12453"
+         style="opacity:1;fill:#f2f2f2;fill-opacity:1;stroke:none;stroke-width:0.26458332;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke markers fill" />
+      <rect
+         transform="rotate(45)"
+         style="opacity:1;fill:#f2f2f2;fill-opacity:1;stroke:none;stroke-width:0.26458332;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke markers fill"
+         id="rect12455"
+         width="1.7325611"
+         height="11.585702"
+         x="-3.7236743"
+         y="-22.154789" />
+      <rect
+         y="-6.802135"
+         x="-14.198326"
+         height="11.585702"
+         width="1.7325611"
+         id="rect12457"
+         style="opacity:1;fill:#f2f2f2;fill-opacity:1;stroke:none;stroke-width:0.26458332;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:stroke markers fill"
+         transform="rotate(141.49887)" />
+    </g>
+  </g>
+</svg>
