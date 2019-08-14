@@ -1,13 +1,12 @@
 .button {
   display: block;
-  background-color: var(--dark-purple);
+  background-color: var(--main-color);
   color: var(--white);
   font-family: 'Poppins', 'Montserrat', sans-serif;
-  font-weight: 600;
-  font-size: 0.875em;
-  letter-spacing: 2px;
+  font-weight: 500;
+  font-size: 1em;
+  letter-spacing: 1px;
   text-decoration: none;
-  border-radius: 12%/50%;
   padding: 20px 30px;
   width: max-content;
 

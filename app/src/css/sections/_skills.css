@@ -7,9 +7,35 @@
     padding-left: 0;
     width: max-content;
     display: inline-block;
+    color: var(--gray);
   }
 
   &__list:first-of-type {
     margin-right: 30px;
+  }
+
+  &__list-heading {
+    color: var(--white);
+    font-family: 'Poppins';
+    font-size: 1.125em;
+    font-weight: 200;
+    letter-spacing: 1.5px;
+    margin-bottom: 10px;
+  }
+
+  &__circle {
+    display: inline-block;
+    background-color: var(--main-color);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+
+  &__image {
+    width: 100px;
+    height: 100px;
+    background-color: var(--main-color);
+    margin: 60px auto 0 auto;
   }
 }

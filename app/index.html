@@ -3,7 +3,7 @@
 
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link href='https://fonts.googleapis.com/css?family=Montserrat:200,400,700|Poppins:300,600|Roboto:300,400,500&display=swap' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:700|Poppins:200,300,400,500|Roboto:300&display=swap" rel="stylesheet" type="text/css">
   <title>Default Website</title>
   <meta name="keywords" content="">
   <meta name="description" content="">
@@ -19,18 +19,11 @@
   
   <div class="hero">
     <div class="hero__container">
-      <h1 class="hero__heading">Kellie Petersen</h1>
-      <p class="hero__subheading">I design and build <span class="hero__subheading-span">websites & applications</span></p>
-      <div class="hero__aside">
-        <div class="hero__icon"></div>
-        <p class="hero__aside-text">Front-End Developer</p>
-      </div>
-      <div class="hero__aside">
-        <div class="hero__icon"></div>
-        <p class="hero__aside-text text--dark-gray">Hobbyist Designer</p>
-      </div>
+      <h1 class="hero__heading"><span class="hero__heading-span">Hi, I'm </span>Kellie.</h1>
+      <p class="hero__subheading">I'm a front-end developer and wannabe designer currently working for <a class="hero__link">Novelle Web & Software</a>.
+      <span class="hero__subheading-span">I'm available for small freelance projects.</span></p>
+      <a href="#contact" class="button hero__button">Get in touch<div class="button__icon button__arrow"></div></a>
     </div>
-    <a href="#contact" class="button hero__button">GET IN TOUCH <div class="button__icon button__arrow"></div></a>
   </div>
 
   <section class="text__section about" id="about">
@@ -76,62 +69,63 @@
       <div class="skills__image"></div>
       <div class="text__container">
         <h3 class="text__subheading">Languages</h3>
-        <p class="text__paragraph text--white">I like working with vanilla code, but I value learning new language tools.
+        <p class="text__paragraph">I like working with vanilla code, but I value learning new language tools.
           I make sure to stay up-to-date with ECMAScript.</p>
         <ul class="skills__list">
-          <li class="skills__list-item"><div class="shape__diamond"></div>JavaScript</li>
-          <li class="skills__list-item"><div class="shape__diamond"></div>TypeScript</li>
-          <li class="skills__list-item"><div class="shape__diamond"></div>HTML</li>
-          <li class="skills__list-item"><div class="shape__diamond"></div>CSS</li>
-          <li class="skills__list-item"><div class="shape__diamond"></div>PostCSS</li>
+          <li class="skills__list-heading">JavaScript</li>
+          <li><div class="skills__circle"></div>ES9</li>
+          <li><div class="skills__circle"></div>TypeScript</li>
+          <li><div class="skills__circle"></div>jQuery</li>
+          <li><div class="skills__circle"></div>NodeJS</li>
+          <li><div class="skills__circle"></div>ExpressJS</li>
+          <li><div class="skills__circle"></div>React</li>
         </ul>
-        <ul class="skills__list text--dark-gray">
-          <li class="skills__list-item"><div class="shape__diamond shape--dark"></div>jQuery</li>
-          <li class="skills__list-item"><div class="shape__diamond shape--dark"></div>Python</li>
-          <li class="skills__list-item"><div class="shape__diamond shape--dark"></div>PHP</li>
-          <li class="skills__list-item"><div class="shape__diamond shape--dark"></div>SQL & NoSQL</li>
-          <li class="skills__list-item"><div class="shape__diamond shape--dark"></div>SASS & LESS</li>
+        <ul class="skills__list">
+          <li class="skills__list-heading">HTML & CSS</li>
+          <li><div class="skills__circle"></div>PostCSS</li>
+          <li><div class="skills__circle"></div>SASS</li>
+          <li><div class="skills__circle"></div>LESS</li>
+          <li><div class="skills__circle"></div>Bootstrap 4</li>
+          <li><div class="skills__circle"></div>Semantic UI</li>
+          <li><div class="skills__circle"></div>Bulma</li>
         </ul>
       </div>
       
       <div class="skills__image"></div>
       <div class="text__container">
         <h3 class="text__subheading">Technology</h3>
-        <p class="text__paragraph text--white">I'm comfortable coding with or without frameworks and CMS. I can create and implement custom templates.</p>
+        <p class="text__paragraph">I'm comfortable coding with or without frameworks and CMS. I can create and implement custom templates.</p>
         <ul class="skills__list">
-          <li class="skills__list-item"><div class="shape__diamond"></div>WordPress CMS</li>
-          <li class="skills__list-item"><div class="shape__diamond"></div>Yarn & npm</li>
-          <li class="skills__list-item"><div class="shape__diamond"></div>Webpack & Gulp</li>
-          <li class="skills__list-item"><div class="shape__diamond"></div>GitHub & GitLab</li>
-          <li class="skills__list-item"><div class="shape__diamond"></div>JasmineJS</li>
-        </ul>
-        <ul class="skills__list text--dark-gray">
-          <li class="skills__list-item"><div class="shape__diamond shape--dark"></div>MongoDB</li>
-          <li class="skills__list-item"><div class="shape__diamond shape--dark"></div>MySQL</li>
-          <li class="skills__list-item"><div class="shape__diamond shape--dark"></div>React</li>
-          <li class="skills__list-item"><div class="shape__diamond shape--dark"></div>Node & Express</li>
-          <li class="skills__list-item"><div class="shape__diamond shape--dark"></div>CSS Frameworks</li>
+          <li class="skills__list-heading">Management</li>
+          <li><div class="skills__circle"></div>Webpack</li>
+          <li><div class="skills__circle"></div>Gulp</li>
+          <li><div class="skills__circle"></div>Parcel</li>
+          <li><div class="skills__circle"></div>WordPress CMS</li>
+          <li><div class="skills__circle"></div>npm & Yarn</li>
+          <li><div class="skills__circle"></div>GitHub & GitLab</li>
         </ul>
       </div>
       
       <div class="skills__image"></div>
       <div class="text__container">
         <h3 class="text__subheading">Methods</h3>
-        <p class="text__paragraph text--white">I try to make my workflow as effective as possible. I'm adaptable and happy to adopt new methods that work well with my
+        <p class="text__paragraph">I try to make my workflow as effective as possible. I'm adaptable and happy to adopt new methods that work well with my
         team.</p>
         <ul class="skills__list">
-          <li class="skills__list-item"><div class="shape__diamond"></div>BEMCSS</li>
-          <li class="skills__list-item"><div class="shape__diamond"></div>Mobile-First Approach</li>
-          <li class="skills__list-item"><div class="shape__diamond"></div>Continuous Integration</li>
-          <li class="skills__list-item"><div class="shape__diamond"></div>SCRUM</li>
-          <li class="skills__list-item"><div class="shape__diamond"></div>Functional Programming</li>
+          <li class="skills__list-heading">Approach</li>
+          <li><div class="skills__circle"></div>SCRUM</li>
+          <li><div class="skills__circle"></div>Mobile-First Approach</li>
+          <li><div class="skills__circle"></div>Continuous Integration</li>
+          <li><div class="skills__circle"></div>Progressive Web Apps</li>
+          <li><div class="skills__circle"></div>Test-Driven Development</li>
         </ul>
-        <ul class="skills__list text--dark-gray">
-          <li class="skills__list-item"><div class="shape__diamond shape--dark"></div>ITCSS & OOCSS</li>
-          <li class="skills__list-item"><div class="shape__diamond shape--dark"></div>Progressive Web Apps</li>
-          <li class="skills__list-item"><div class="shape__diamond shape--dark"></div>Test-Driven Development</li>
-          <li class="skills__list-item"><div class="shape__diamond shape--dark"></div>Agile Workflows</li>
-          <li class="skills__list-item"><div class="shape__diamond shape--dark"></div>OOP</li>
+        <ul class="skills__list">
+          <li class="skills__list-heading">Code Structure</li>
+          <li><div class="skills__circle"></div>BEMCSS</li>
+          <li><div class="skills__circle"></div>OOCSS</li>
+          <li><div class="skills__circle"></div>ITCSS</li>
+          <li><div class="skills__circle"></div>Functional Programming</li>
+          <li><div class="skills__circle"></div>OOP</li>
         </ul>
       </div>
     </div>

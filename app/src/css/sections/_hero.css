@@ -10,7 +10,7 @@
     transform: translateY(-40%);
 
     @mixin atMobile {
-      top: calc(40vh - 100px);
+      top: calc(50vh - 100px);
       transform: none;
     }
   }
@@ -22,44 +22,29 @@
     margin: 0;
   }
 
+  &__heading-span {
+    color: var(--dark-gray);
+  }
+
   &__subheading {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.5em;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.125em;
     font-weight: 200;
+    letter-spacing: 1px;
     line-height: 1.5;
-    margin: 20px auto;
+    margin: 20px 0 30px 0;
+    width: 90%;
 
     @mixin atMobile {
-      margin: 5px auto;
+      margin: 10px 0 20px 0;
     }
   }
 
   &__subheading-span {
-    display: block;
+    display: none;
+  }
+
+  &__link {
     font-weight: 400;
-  }
-
-  &__aside {
-    letter-spacing: 1.5px;
-  }
-
-  &__aside-text {
-    display: inline-block;
-    margin: 6px 10px;
-  }
-
-  &__icon {
-    display: inline-block;
-    width: 25px;
-    height: 20px;
-    border: 2px solid var(--purple);
-    vertical-align: text-bottom;
-  }
-
-  &__button {
-    position: absolute;
-    left: 50%;
-    bottom: 10vh;
-    transform: translateX(-50%);
   }
 }

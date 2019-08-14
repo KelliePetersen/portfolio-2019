@@ -1,10 +1,8 @@
 :root {
-  --black: #252525;
+  --black: #212121;
   --white: #e6e6e6;
-  --gray: #b3b3b3;
-  --dark-gray: #808080;
-  --darkest-gray: #4d4d4d;
-  --purple: #5e37f6;
-  --dark-purple: #5233cc;
-  --aqua: #19f7d9;
+  --gray: #999999;
+  --dark-gray: #3c3c3c;
+  --darkest-gray: #252525;
+  --main-color: #d34a4a;
 }
