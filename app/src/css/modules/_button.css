@@ -19,11 +19,8 @@
     vertical-align: bottom;
   }
 
-  &--center {
-    margin: 0 auto;
-  }
-
-  &--hidden {
-    display: none;
+  &--small {
+    padding: 15px 20px;
+    font-size: 0.875em;
   }
 }

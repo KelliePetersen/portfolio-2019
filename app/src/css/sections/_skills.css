@@ -1,5 +1,13 @@
 .skills {
 
+  &__list-container {
+    display: inline-block;
+  }
+
+  &__list-container:first-of-type {
+    margin-right: 80px;
+  }
+
   &__list {
     font-size: 0.875em;
     list-style-type: none;
@@ -20,7 +28,7 @@
     font-size: 1.125em;
     font-weight: 200;
     letter-spacing: 1.5px;
-    margin-bottom: 10px;
+    margin: 10px 0 0 0;
   }
 
   &__circle {
@@ -36,6 +44,6 @@
     width: 100px;
     height: 100px;
     background-color: var(--main-color);
-    margin: 60px auto 0 auto;
+    margin: 100px auto 0 auto;
   }
 }
