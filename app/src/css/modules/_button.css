@@ -5,12 +5,11 @@
   font-family: 'Poppins', 'Montserrat', sans-serif;
   font-weight: 400;
   font-size: 1em;
-  letter-spacing: 1px;
   text-decoration: none;
   padding: 20px 30px;
   width: max-content;
 
-  &__icon {
+  &__arrow {
     position: absolute;
     margin-top: 5px;
     margin-left: 15px;
@@ -21,7 +20,7 @@
     font-size: 0.875em;
   }
 
-  &--small > &__icon {
+  &--small > &__arrow {
     width: 30px;
     margin-left: 10px;
   }

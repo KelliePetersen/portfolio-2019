@@ -17,12 +17,14 @@
 
 <body>
   
-  <div class="hero">
+  <a class="back-to-top back-to-top--hidden" href=#home>&uarr;</a>
+
+  <div class="hero" id="home">
     <div class="hero__container">
       <h1 class="hero__heading"><span class="hero__heading-span">Hi, I'm </span>Kellie.</h1>
       <p class="hero__subheading">I'm a front-end developer and wannabe designer currently working for <a href="http://www.novelleweb.com" target="_blank" class="hero__link">Novelle Web & Software</a>.
       <span class="hero__subheading-span">I'm available for small freelance projects.</span></p>
-      <a href="#contact" class="button hero__button">Get in touch<img src="src/img/arrow.svg" class="button__icon"/></a>
+      <a href="#contact" class="button hero__button">Get in touch<img src="src/img/arrow.svg" class="button__arrow"/></a>
     </div>
   </div>
 
@@ -40,7 +42,13 @@
       <div class="about__image-container">
         <div class="about__image-border"></div>
         <img src="src/img/kellie.jpg" alt="A photo of Kellie Petersen" class="about__image">
-        <div class="about__square"></div>
+        <div class="about__circle"></div>
+      </div>
+
+      <div class="about__australia-container">
+        <img src="src/img/australia.svg" alt="An outline of Australia, with a map pin on Brisbane" class="about__australia">
+        <div class="about__map-pin"></div>
+        <div class="about__map-line"></div>
       </div>
       
       <div class="text__container">
@@ -51,14 +59,14 @@
         co-founded with my better half.</p>
       </div>
       
-      <div class="text__container">
+      <div class="text__container text--margin">
         <h3 class="text__subheading">What I do</h3>
         <p class="text__paragraph">I'm currently working for Novelle Web & Software, a business I
           co-founded with my better half.</p>
         <p class="text__paragraph">I value creating websites with readable and maintainable code, that are accessible to everyone.</p>
       </div>
 
-      <div class="about__city"></div>
+      <img src="src/img/city.svg" class="about__city"></img>
     </div>
   </section>
 
@@ -157,9 +165,9 @@
           <p><span class="projects__summary-title">PROJECT:</span> Commercial Website</p>
           <p><span class="projects__summary-title">ROLE:</span> Design & Code</p>
         </div>
-        <p class="text__paragraph text--hidden">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ut labore et dolore magna aliqua.</p>
-        <p class="text__paragraph text--hidden">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ut labore et dolore magna aliqua.</p>
-        <a href="#" class="button button--small">View website<img src="src/img/arrow.svg" class="button__icon" /></a>
+        <p class="text__paragraph projects__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ut labore et dolore magna aliqua.</p>
+        <p class="text__paragraph projects__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ut labore et dolore magna aliqua.</p>
+        <a href="http://www.novelleweb.com" target="_blank" class="button button--small">View website<img src="src/img/arrow.svg" class="button__arrow" /></a>
       </div>
       <img src="src/img/novelle.jpg" alt="A screenshot of the Novelle landing page" class="projects__image">
     </div>
@@ -171,9 +179,9 @@
           <p><span class="projects__summary-title">PROJECT:</span> Commercial Website</p>
           <p><span class="projects__summary-title">ROLE:</span> Design & Code</p>
         </div>
-        <p class="text__paragraph text--hidden">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ut labore et dolore magna aliqua.</p>
-        <p class="text__paragraph text--hidden">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ut labore et dolore magna aliqua.</p>
-        <a href="#" class="button button--small">View website<img src="src/img/arrow.svg" class="button__icon" /></a>
+        <p class="text__paragraph projects__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ut labore et dolore magna aliqua.</p>
+        <p class="text__paragraph projects__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ut labore et dolore magna aliqua.</p>
+        <a href="http://www.raphawalk.com" target="_blank" class="button button--small">View website<img src="src/img/arrow.svg" class="button__arrow" /></a>
       </div>
       <img src="src/img/rapha.jpg" alt="A screenshot of the Rapha Walk landing page" class="projects__image">
     </div>
@@ -185,9 +193,9 @@
           <p><span class="projects__summary-title">PROJECT:</span> Commercial Website</p>
           <p><span class="projects__summary-title">ROLE:</span> Design & Code</p>
         </div>
-        <p class="text__paragraph text--hidden">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ut labore et dolore magna aliqua.</p>
-        <p class="text__paragraph text--hidden">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ut labore et dolore magna aliqua.</p>
-        <a href="#" class="button button--small">View website<img src="src/img/arrow.svg" class="button__icon" /></a>
+        <p class="text__paragraph projects__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ut labore et dolore magna aliqua.</p>
+        <p class="text__paragraph projects__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ut labore et dolore magna aliqua.</p>
+        <a href="http://www.github.com/capricorncoast" target="_blank" class="button button--small">View website<img src="src/img/arrow.svg" class="button__arrow" /></a>
       </div>
       <img src="src/img/capricorncoast.jpg" alt="A screenshot of the Capricorn Coast landing page" class="projects__image">
     </div>
@@ -204,14 +212,14 @@
       <input type="email" name="email" required class="contact__input"/>
       <label for="message" class="contact__label">Message</label>
       <textarea name="message" cols="30" rows="10" required class="contact__message"></textarea>
-      <input type="button" value="Send message" class="button button--small contact__submit"/>
+      <input type="submit" value="Send message" class="button button--small contact__submit"/>
       <p class="contact__aside">or email me at <a href="mailto:contact@kelliepetersen.com" class="contact__aside-span">contact@kelliepetersen.com</a></p>
     </form>
   </section>
 
   <footer class="footer">
-    <img src="src/img/logo.svg" alt="Kellie Petersen logo" class="text__logo">
-    <p class="footer__copyright">&copy; 2019 Kellie Petersen. All Rights Reserved.</p>
+    <a href="#home"><img src="src/img/logo.svg" alt="Kellie Petersen logo" class="text__logo"></a>
+    <p>&copy; 2019 Kellie Petersen. All Rights Reserved.</p>
   </footer>
   
 </body>

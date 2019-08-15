@@ -39,6 +39,12 @@
   &__submit {
     border: none;
     margin: 0 auto 20px auto;
+    letter-spacing: 1px;
+    background-image: url(/src/img/plane.svg);
+    background-repeat: no-repeat;
+    background-position: 90% 50%;
+    background-size: 20px 20px;
+    padding-right: 45px;
   }
 
   &__aside {

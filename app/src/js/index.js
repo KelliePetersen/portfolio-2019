@@ -1,3 +1,3 @@
 import BackToTop from './modules/BackToTop';
 
-// const backToTop = new BackToTop();
+const backToTop = new BackToTop();

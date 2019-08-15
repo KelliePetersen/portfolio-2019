@@ -1,9 +1,7 @@
 .footer {
   text-align: center;
   margin-bottom: 30px;
-
-  &__copyright {
-    font-size: 0.75em;
-    color: var(--gray);
-  }
+  font-size: 0.75em;
+  color: var(--gray);
+  letter-spacing: 0px;
 }
