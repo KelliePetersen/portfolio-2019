@@ -1,7 +1,7 @@
 {
-  "name": "default-build",
+  "name": "portfolio",
   "version": "1.0.0",
-  "description": "Starting template for a simple website.",
+  "description": "My portfolio website",
   "main": "index.js",
   "author": "Kellie Petersen",
   "license": "MIT",
@@ -16,7 +16,7 @@
     "@babel/preset-env": "^7.2.3",
     "autoprefixer": "^9.4.4",
     "babel-loader": "^8.0.5",
-    "browser-sync": "^2.26.3",
+    "browser-sync": "^2.26.7",
     "del": "^3.0.0",
     "gulp": "^4.0.0",
     "gulp-clean-css": "^4.0.0",
@@ -42,6 +42,7 @@
     "gulp-cli": "^2.0.1",
     "lazysizes": "^4.1.5",
     "normalize.css": "^8.0.1",
-    "picturefill": "^3.0.3"
+    "picturefill": "^3.0.3",
+    "rfs": "^8.0.4"
   }
 }

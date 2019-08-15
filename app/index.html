@@ -25,8 +25,8 @@
   </div>
 
   <nav class="nav">
-    <a href="#home" class="nav__home-link"><img src="src/img/logo.svg" alt="Kellie Petersen icon" class="nav__logo"></a>
-    <a href="#home" class="nav__name">K<span>.</span>Petersen</a>
+    <a href="#home"><img src="src/img/logo.svg" alt="Kellie Petersen icon" class="nav__logo"></a>
+    <a href="#home" class="nav__name">K<span class="nav__name-span">.</span>Petersen</a>
     <ul class="nav__list">
       <li class="nav__section"><a id="about-link" class="nav__link" href="#about">About</a></li>
       <li class="nav__section"><a id="skills-link" class="nav__link" href="#skills">Skills</a></li>
@@ -36,9 +36,9 @@
   </nav>
 
   <nav class="sidebar">
-    <img class="sidebar__icon" src="src/img/resume.svg"></img>
-    <img class="sidebar__icon" src="src/img/heart.svg"></img>
-    <img class="sidebar__icon" src="src/img/github.svg"></img>
+    <a class="sidebar__link" href="#">Download Resume<img class="sidebar__icon" src="src/img/resume.svg"></img></a>
+    <a class="sidebar__link" href="#">My Other Half<img class="sidebar__icon" src="src/img/heart.svg"></img></a>
+    <a class="sidebar__link" href="#">Github Repository<img class="sidebar__icon" src="src/img/github.svg"></img></a>
   </nav>
 
   <a class="back-to-top back-to-top--hidden" href=#home>&uarr;</a>
@@ -48,7 +48,7 @@
       <h1 class="hero__heading"><span class="hero__heading-span">Hi, I'm </span>Kellie.</h1>
       <p class="hero__subheading">I'm a front-end developer and wannabe designer currently working for <a href="http://www.novelleweb.com" target="_blank" class="hero__link">Novelle Web & Software</a>.
       <span class="hero__subheading-span">I'm available for small freelance projects.</span></p>
-      <a href="#contact" class="button hero__button">Get in touch<img src="src/img/arrow.svg" class="button__arrow"/></a>
+      <a href="#contact" class="button hero__button">Get in touch<img src="src/img/arrow.svg" class="hero__arrow"/></a>
     </div>
   </div>
 
@@ -191,7 +191,7 @@
         </div>
         <p class="text__paragraph projects__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ut labore et dolore magna aliqua.</p>
         <p class="text__paragraph projects__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ut labore et dolore magna aliqua.</p>
-        <a href="http://www.novelleweb.com" target="_blank" class="button button--small">View website<img src="src/img/arrow.svg" class="button__arrow" /></a>
+        <a href="http://www.novelleweb.com" target="_blank" class="button">View website<img src="src/img/arrow.svg" class="button__arrow" /></a>
       </div>
       <img src="src/img/novelle.jpg" alt="A screenshot of the Novelle landing page" class="projects__image">
     </div>
@@ -205,7 +205,7 @@
         </div>
         <p class="text__paragraph projects__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ut labore et dolore magna aliqua.</p>
         <p class="text__paragraph projects__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ut labore et dolore magna aliqua.</p>
-        <a href="http://www.raphawalk.com" target="_blank" class="button button--small">View website<img src="src/img/arrow.svg" class="button__arrow" /></a>
+        <a href="http://www.raphawalk.com" target="_blank" class="button">View website<img src="src/img/arrow.svg" class="button__arrow" /></a>
       </div>
       <img src="src/img/rapha.jpg" alt="A screenshot of the Rapha Walk landing page" class="projects__image">
     </div>
@@ -219,7 +219,7 @@
         </div>
         <p class="text__paragraph projects__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ut labore et dolore magna aliqua.</p>
         <p class="text__paragraph projects__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ut labore et dolore magna aliqua.</p>
-        <a href="http://www.github.com/capricorncoast" target="_blank" class="button button--small">View website<img src="src/img/arrow.svg" class="button__arrow" /></a>
+        <a href="http://www.github.com/capricorncoast" target="_blank" class="button">View website<img src="src/img/arrow.svg" class="button__arrow" /></a>
       </div>
       <img src="src/img/capricorncoast.jpg" alt="A screenshot of the Capricorn Coast landing page" class="projects__image">
     </div>
@@ -236,7 +236,7 @@
       <input type="email" name="email" required class="contact__input"/>
       <label for="message" class="contact__label">Message</label>
       <textarea name="message" cols="30" rows="10" required class="contact__message"></textarea>
-      <input type="submit" value="Send message" class="button button--small contact__submit"/>
+      <input type="submit" value="Send message" class="button contact__submit"/>
       <p class="contact__aside">or email me at <a href="mailto:contact@kelliepetersen.com" class="contact__aside-span">contact@kelliepetersen.com</a></p>
     </form>
   </section>

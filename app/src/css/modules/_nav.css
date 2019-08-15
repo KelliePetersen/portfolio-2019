@@ -1,9 +1,8 @@
 .nav {
   position: relative;
-  width: 100%;
   z-index: 15;
   text-decoration: none;
-
+  
   &__logo {
     position: fixed;
     top: 2.5%;
@@ -11,7 +10,24 @@
   }
 
   &__name, &__link {
+    display: none;
     text-decoration: none;
+    color: var(--white);
+    font-family: 'Poppins';
+  }
+
+  &__name {
+    font-weight: 400;
+    font-size: 1.25em;
+  }
+
+  &__name-span {
+    color: var(--main-color);
+    font-weight: 500;
+  }
+
+  &__link {
+    font-weight: 200;
   }
 
   &__section {

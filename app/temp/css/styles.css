@@ -533,7 +533,6 @@ img {
 
 .nav {
   position: relative;
-  width: 100%;
   z-index: 15;
   text-decoration: none;
 }
@@ -545,12 +544,35 @@ img {
   }
 
 .nav__name, .nav__link {
+    display: none;
     text-decoration: none;
+    color: var(--white);
+    font-family: 'Poppins';
+  }
+
+.nav__name {
+    font-weight: 400;
+    font-size: 1.25em;
+  }
+
+.nav__name-span {
+    color: var(--main-color);
+    font-weight: 500;
+  }
+
+.nav__link {
+    font-weight: 200;
   }
 
 .nav__section {
     list-style-type: none;
   }
+
+.sidebar {
+  display: none;
+  position: fixed;
+  z-index: 10;
+}
 
 .text__section {
     margin-bottom: 30vw;
@@ -567,21 +589,43 @@ img {
   }
 
 .text__heading {
-    font-size: 2.25em;
+    font-size: 4.5rem;
     text-align: center;
     margin-bottom: 1.5em;;
   }
 
+@media (max-width: 768px), (max-height: 768px) {
+
+  .text__heading {
+    font-size: calc(1.0875rem + 7.10938vmin);
+  }
+}
+
 .text__subheading {
-    font-size: 1.5em;
+    font-size: 3rem;
     margin-bottom: 10px;
   }
+
+@media (max-width: 768px), (max-height: 768px) {
+
+  .text__subheading {
+    font-size: calc(1.05rem + 4.0625vmin);
+  }
+}
 
 .text__paragraph {
     font-weight: 300;
     line-height: 1.5;
     color: var(--gray);
+    font-size: 1.375rem;
   }
+
+@media (max-width: 768px), (max-height: 768px) {
+
+  .text__paragraph {
+    font-size: calc(1.00937rem + 0.76172vmin);
+  }
+}
 
 .text--margin {
     margin-top: 100px;
@@ -597,28 +641,26 @@ img {
   background-color: var(--main-color);
   color: var(--white);
   font-family: 'Poppins', 'Montserrat', sans-serif;
-  font-weight: 400;
-  font-size: 1em;
+  font-weight: 500;
+  font-size: 0.875em;
   text-decoration: none;
-  padding: 20px 30px;
+  padding: 15px 20px;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
 }
 
+@media (min-width: 768px) {
+
+.button {
+    font-size: 1em
+}
+  }
+
 .button__arrow {
     position: absolute;
-    margin-top: 5px;
-    margin-left: 15px;
-  }
-
-.button--small {
-    padding: 15px 20px;
-    font-size: 0.875em;
-  }
-
-.button--small > .button__arrow {
     width: 30px;
+    margin-top: 5px;
     margin-left: 10px;
   }
 
@@ -689,9 +731,16 @@ img {
 
 .hero__heading {
     font-family: 'Montserrat', sans-serif;
-    font-size: 3em;
+    font-size: 6rem;
     margin: 0;
   }
+
+@media (max-width: 768px), (max-height: 768px) {
+
+  .hero__heading {
+    font-size: calc(1.125rem + 10.15625vmin);
+  }
+}
 
 .hero__heading-span {
     color: var(--dark-gray);
@@ -699,12 +748,20 @@ img {
 
 .hero__subheading {
     font-family: 'Poppins', sans-serif;
-    font-size: 1.125em;
+    font-size: 1.5rem;
     font-weight: 200;
     line-height: 1.5;
     margin: 20px 0 30px 0;
     color: #ccc;
+    max-width: 640px;
   }
+
+@media (max-width: 768px), (max-height: 768px) {
+
+  .hero__subheading {
+    font-size: calc(1.0125rem + 1.01563vmin);
+  }
+}
 
 @media (max-height: 400px) {
 
@@ -717,10 +774,28 @@ img {
     display: none;
   }
 
+@media (min-width: 768px) {
+
+.hero__subheading-span {
+      display: block
+  }
+  }
+
 .hero__link {
     font-weight: 400;
     text-decoration: none;
     color: var(--white);
+  }
+
+.hero__button {
+    font-size: 1em;
+    padding: 20px 34px;
+  }
+
+.hero__arrow {
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 15px;
   }
 
 .about__container {
@@ -840,11 +915,18 @@ img {
 .skills__list-heading {
     color: var(--white);
     font-family: 'Poppins';
-    font-size: 1.125em;
+    font-size: 1.375rem;
     font-weight: 200;
     letter-spacing: 1.5px;
     margin: 10px 0 0 0;
   }
+
+@media (max-width: 768px), (max-height: 768px) {
+
+  .skills__list-heading {
+    font-size: calc(1.00937rem + 0.76172vmin);
+  }
+}
 
 .skills__circle {
     display: inline-block;
@@ -883,11 +965,18 @@ img {
     margin-bottom: 20px;
   }
 
+@media (min-width: 768px) {
+
+.projects__summary {
+      font-size: 1em
+  }
+  }
+
 .projects__summary-title {
     display: none;
   }
 
-@media (min-width: 800px) {
+@media (min-width: 768px) {
 
 .projects__summary-title {
       font-weight: 500;
