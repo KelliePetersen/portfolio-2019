@@ -1,5 +1,19 @@
 .skills {
 
+  &__container {
+    @mixin atLarge {
+      display: grid;
+      grid-template-columns: 30% 70%;
+      grid-row-gap: 150px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+  }
+
+  & .text__paragraph {
+    max-width: 650px;
+  }
+
   &__list-container {
     display: inline-block;
   }
@@ -16,6 +30,10 @@
     width: max-content;
     display: inline-block;
     color: var(--gray);
+
+    @mixin atMedium {
+      font-size: 1em;
+    }
   }
 
   &__list:first-of-type {
