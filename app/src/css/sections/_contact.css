@@ -1,4 +1,5 @@
 .contact {
+  margin-bottom: 100px;
 
   &__text {
     width: 85%;
@@ -14,6 +15,7 @@
   }
 
   &__label {
+    display: block;
     color: var(--gray);
     font-size: 0.875em;
     letter-spacing: 0.5px;
@@ -37,14 +39,19 @@
   }
 
   &__submit {
+    display: block;
     border: none;
-    margin: 0 auto 20px auto;
+    margin: 0 auto;
     letter-spacing: 1px;
     background-image: url(/src/img/plane.svg);
     background-repeat: no-repeat;
     background-position: 90% 50%;
     background-size: 20px 20px;
     padding-right: 45px;
+
+    @mixin atMedium {
+      display: inline-block;
+    }
   }
 
   &__aside {
@@ -52,6 +59,11 @@
     font-size: 0.875em;
     color: var(--gray);
     letter-spacing: 0.5px;
+
+    @mixin atMedium {
+      display: inline-block;
+      width: 300px;
+    }
   }
 
   &__aside-span {

@@ -189,8 +189,8 @@
           <p><span class="projects__summary-title">PROJECT:</span> Commercial Website</p>
           <p><span class="projects__summary-title">ROLE:</span> Design & Code</p>
         </div>
-        <p class="text__paragraph projects__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ut labore et dolore magna aliqua.</p>
-        <p class="text__paragraph projects__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ut labore et dolore magna aliqua.</p>
+        <p class="text__paragraph text--hidden">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ut labore et dolore magna aliqua.</p>
+        <p class="text__paragraph text--hidden-at-m">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ut labore et dolore magna aliqua.</p>
         <a href="http://www.novelleweb.com" target="_blank" class="button">View website<img src="src/img/arrow.svg" class="button__arrow" /></a>
       </div>
       <img src="src/img/novelle.jpg" alt="A screenshot of the Novelle landing page" class="projects__image">
@@ -203,8 +203,8 @@
           <p><span class="projects__summary-title">PROJECT:</span> Commercial Website</p>
           <p><span class="projects__summary-title">ROLE:</span> Design & Code</p>
         </div>
-        <p class="text__paragraph projects__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ut labore et dolore magna aliqua.</p>
-        <p class="text__paragraph projects__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ut labore et dolore magna aliqua.</p>
+        <p class="text__paragraph text--hidden">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ut labore et dolore magna aliqua.</p>
+        <p class="text__paragraph text--hidden-at-m">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ut labore et dolore magna aliqua.</p>
         <a href="http://www.raphawalk.com" target="_blank" class="button">View website<img src="src/img/arrow.svg" class="button__arrow" /></a>
       </div>
       <img src="src/img/rapha.jpg" alt="A screenshot of the Rapha Walk landing page" class="projects__image">
@@ -217,15 +217,15 @@
           <p><span class="projects__summary-title">PROJECT:</span> Commercial Website</p>
           <p><span class="projects__summary-title">ROLE:</span> Design & Code</p>
         </div>
-        <p class="text__paragraph projects__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ut labore et dolore magna aliqua.</p>
-        <p class="text__paragraph projects__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ut labore et dolore magna aliqua.</p>
+        <p class="text__paragraph text--hidden">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ut labore et dolore magna aliqua.</p>
+        <p class="text__paragraph text--hidden-at-m">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ut labore et dolore magna aliqua.</p>
         <a href="http://www.github.com/capricorncoast" target="_blank" class="button">View website<img src="src/img/arrow.svg" class="button__arrow" /></a>
       </div>
       <img src="src/img/capricorncoast.jpg" alt="A screenshot of the Capricorn Coast landing page" class="projects__image">
     </div>
   </section>
 
-  <section class="text__section contact" id="contact">
+  <section class="contact" id="contact">
     <h2 class="text__heading text--no-margin">Let's talk.</h2>
     <p class="contact__text text__paragraph">Feel free to contact me by email or social media.
       I'm currently available for freelance work on small projects and salary positions. Thank you.</p>
@@ -236,8 +236,10 @@
       <input type="email" name="email" required class="contact__input"/>
       <label for="message" class="contact__label">Message</label>
       <textarea name="message" cols="30" rows="10" required class="contact__message"></textarea>
-      <input type="submit" value="Send message" class="button contact__submit"/>
-      <p class="contact__aside">or email me at <a href="mailto:contact@kelliepetersen.com" class="contact__aside-span">contact@kelliepetersen.com</a></p>
+      <div>
+        <input type="submit" value="Send message" class="button contact__submit"/>
+        <p class="contact__aside">or email me at <a href="mailto:contact@kelliepetersen.com" class="contact__aside-span">contact@kelliepetersen.com</a></p>
+      </div>
     </form>
   </section>
 

@@ -2,11 +2,18 @@
 
   &__section {
     margin-bottom: 30vw;
+    @mixin atMedium {
+      margin-bottom: 200px;
+    }
   }
 
   &__container {
     width: 85%;
     margin: 0 auto;
+    @mixin atMedium {
+      width: 100%;
+      max-width: 650px;
+    }
   }
 
   &__heading, &__subheading {
@@ -29,7 +36,8 @@
     font-weight: 300;
     line-height: 1.5;
     color: var(--gray);
-    responsive-font-size: 1.375rem;
+    responsive-font-size: 1.25rem;
+    max-width: 500px;
   }
 
   &--margin {
@@ -39,5 +47,19 @@
 
   &--no-margin {
     margin-bottom: 30px;
+  }
+
+  &--hidden {
+    display: none;
+    @mixin atMedium {
+      display: block;
+    }
+  }
+
+  &--hidden-at-m {
+    display: none;
+    @mixin atLarge {
+      display: block;
+    }
   }
 }
