@@ -1231,10 +1231,10 @@ img {
 
 .projects__container {
       width: 80vw;
-      max-width: 1200px;
+      max-width: 1500px;
       display: grid;
-      grid-template-columns: minmax(-webkit-min-content, 450px) minmax(200px, 800px);
-      grid-template-columns: minmax(min-content, 450px) minmax(200px, 800px);
+      grid-template-columns: minmax(-webkit-min-content, 650px) minmax(200px, 800px);
+      grid-template-columns: minmax(min-content, 650px) minmax(200px, 800px);
       grid-column-gap: 50px;
       align-items: center
   }
@@ -1242,14 +1242,15 @@ img {
 
 .projects__container:nth-of-type(2) {
     margin: calc(10vw + 20px) auto;
-    grid-template-columns: minmax(200px, 800px) minmax(-webkit-min-content, 400px);
-    grid-template-columns: minmax(200px, 800px) minmax(min-content, 400px);
+    grid-template-columns: minmax(200px, 800px) minmax(-webkit-min-content, 600px);
+    grid-template-columns: minmax(200px, 800px) minmax(min-content, 600px);
   }
 
 @media (min-width: 1200px) {
 
 .projects__container:nth-of-type(2) {
-      grid-column-gap: 100px
+      grid-column-gap: 100px;
+      margin: 300px auto
   }
   }
 
