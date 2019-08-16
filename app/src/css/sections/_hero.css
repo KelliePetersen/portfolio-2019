@@ -42,7 +42,7 @@
     @mixin atMobile {
       display: inline;
     }
-    @mixin atLarge {
+    @mixin atWide {
       display: inline;
     }
   }
@@ -86,7 +86,7 @@
   }
 
   &__subheading, &__button {
-    @mixin atLarge {
+    @mixin atWide {
       margin-left: 355px;
     }
   }

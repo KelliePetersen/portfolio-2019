@@ -1,24 +1,65 @@
 .nav {
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: calc(100% - 130px);
+  height: 75px;
+  margin-left: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   z-index: 15;
   text-decoration: none;
+
+  @mixin atLarge {
+    height: 100px;
+    margin-left: 75px;
+  }
+
+  &__container {
+    display: flex;
+    align-items: center;
+  }
   
   &__logo {
     position: fixed;
-    top: 2.5%;
-    left: 3%;
+    top: 20px;
+    left: 30px;
+    @mixin atMedium {
+      position: static;
+      margin-right: 25px;
+    }
+  }
+  
+  &__line {
+    display: none;
+    height: 40px;
+    width: 2px;
+    background-color: var(--dark-gray);
+    opacity: 0.8;
+    margin: 0 25px;
   }
 
-  &__name, &__link {
+  &__name, &__link, &__contact {
     display: none;
     text-decoration: none;
     color: var(--white);
     font-family: 'Poppins';
   }
 
+  &__line, &__link, &__contact {
+    @mixin atMedium {
+      display: inline-block;
+    }
+  }
+
   &__name {
     font-weight: 400;
     font-size: 1.25em;
+    margin: 0 25px;
+    @mixin atLarge {
+      display: block;
+    }
   }
 
   &__name-span {
@@ -26,15 +67,40 @@
     font-weight: 500;
   }
 
-  &__link {
-    font-weight: 200;
-  }
-
   &__section {
     list-style-type: none;
+    font-weight: 200;
+    margin: 0 20px;
   }
 
   &__list {
     margin: 0;
+    padding: 0;
+    display: flex;
+  }
+
+  &__list &__section {
+    margin: 0 25px;
+  }
+
+  &__contact {
+    display: none;
+    @mixin atWide {
+      display: flex;
+      align-items: center;    
+    }
+  }
+
+  &__email {
+    background-color: var(--darkest-gray);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-left: 0;
+  }
+
+  &__email-icon {
+    display: block;
+    margin: 15px auto;
   }
 }

@@ -17,21 +17,31 @@
 
 <body>
   
-  <div class="menu__background"></div>
-  <div class="menu__button">
-    <div class="menu__line"></div>
-    <div class="menu__line"></div>
-    <div class="menu__line"></div>
+  <div class="menu">
+    <div class="menu__background"></div>
+    <div class="menu__button">
+      <div class="menu__line"></div>
+      <div class="menu__line"></div>
+      <div class="menu__line"></div>
+    </div>
   </div>
 
   <nav class="nav">
-    <a href="#home"><img src="src/img/logo.svg" alt="Kellie Petersen icon" class="nav__logo"></a>
-    <a href="#home" class="nav__name">K<span class="nav__name-span">.</span>Petersen</a>
-    <ul class="nav__list">
-      <li class="nav__section"><a id="about-link" class="nav__link" href="#about">About</a></li>
-      <li class="nav__section"><a id="skills-link" class="nav__link" href="#skills">Skills</a></li>
-      <li class="nav__section"><a id="projects-link" class="nav__link" href="#projects">Projects</a></li>
-      <li class="nav__section"><a id="contact-link" class="nav__link" href="#contact">Contact</a></li>
+    <div class="nav__container">
+      <a href="#home"><img src="src/img/logo.svg" alt="Kellie Petersen icon" class="nav__logo"></a>
+      <a href="#home" class="nav__name">K<span class="nav__name-span">.</span>Petersen</a>
+      <div class="nav__line"></div>
+      <ul class="nav__list">
+        <li class="nav__section"><a id="about-link" class="nav__link" href="#about">About</a></li>
+        <li class="nav__section"><a id="skills-link" class="nav__link" href="#skills">Skills</a></li>
+        <li class="nav__section"><a id="projects-link" class="nav__link" href="#projects">Projects</a></li>
+        <li class="nav__section"><a id="contact-link" class="nav__link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+    <ul class="nav__contact">
+      <li class="nav__section"><a class="nav__link" href="mailto:contact@kelliepetersen.com">contact@kelliepetersen.com</a></li>
+      <li class="nav__section nav__email"><img src="src/img/email.svg" alt="Email icon" class="nav__email-icon"></li>
+      <li class="nav__section"><a class="button button--oval" href="#contact">Contact</a></li>
     </ul>
   </nav>
 
