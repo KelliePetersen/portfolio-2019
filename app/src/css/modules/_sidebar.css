@@ -1,5 +1,62 @@
 .sidebar {
   display: none;
   position: fixed;
+  top: 50%;
+  right: 30px;
+  transform: translateY(-50%);
   z-index: 10;
+
+  @mixin atLarge {
+    display: block;
+  }
+
+  @mixin atMonitor {
+    right: 75px;
+  }
+
+  &__icon {
+    display: block;
+    width: 35px;
+    margin: 20px 0;
+    transition: 0.3s;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+
+  &__description {
+    position: absolute;
+    left: -230px;
+    top: 25%;
+    width: 200px;
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.2s;
+  }
+
+  &__text {
+    margin: 0;
+  }
+
+  &__line {
+    position: relative;
+    width: 30px;
+    height: 1px;
+    background-color: var(--white);
+    margin-left: 20px;
+  }
+
+  &__container {
+    position: relative;
+  }
+
+  &__icon:hover + &__description {
+    visibility: visible;
+    opacity: 1;
+  }
 }

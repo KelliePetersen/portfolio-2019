@@ -2,7 +2,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: calc(100% - 130px);
+  width: calc(100% - 70px);
   height: 75px;
   margin-left: 50px;
   display: flex;
@@ -13,6 +13,10 @@
 
   @mixin atLarge {
     height: 100px;
+  }
+
+  @mixin atMonitor {
+    width: calc(100% - 130px);
     margin-left: 75px;
   }
 

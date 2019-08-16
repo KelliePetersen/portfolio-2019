@@ -16,6 +16,12 @@
   }
 }
 
+@define-mixin atMonitor {
+  @media (min-width: 1700px) {
+    @mixin-content;
+  }
+}
+
 @define-mixin atMobile {
   @media (max-height: 400px) {
     @mixin-content;

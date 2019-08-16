@@ -27,7 +27,7 @@
   </div>
 
   <nav class="modal">
-    <a class="modal__logo" href="#home"><img src="src/img/logo.svg" alt="Kellie Petersen icon"></a>
+    <a class="modal__logo modal__link" href="#home"><img class="modal__link" src="src/img/logo.svg" alt="Kellie Petersen icon"></a>
     <ul class="modal__container modal__container--big">
       <li class="modal__list-item"><a class="modal__link" href="#about">ABOUT</a></li>
       <li class="modal__list-item"><a class="modal__link" href="#skills">SKILLS</a></li>
@@ -36,8 +36,8 @@
     </ul>
     <ul class="modal__container">
      <li class="modal__list-item"><a class="modal__link" href="resume.pdf">Download Resume</a></li>
-     <li class="modal__list-item"><a class="modal__link" href="http://www.github.com/kelliepetersen/portfolio">Github Repository</a></li> 
-     <li class="modal__list-item"><a class="modal__link" href="http://www.ewanpetersen.com">My Other Half</a></li>
+     <li class="modal__list-item"><a class="modal__link" href="http://www.github.com/kelliepetersen/portfolio" target="_blank">Github Repository</a></li> 
+     <li class="modal__list-item"><a class="modal__link" href="http://www.ewanpetersen.com" target="_blank">My Other Half</a></li>
     </ul>
     <a class="modal__link modal__email" href="mailto:contact@kelliepetersen.com">contact@kelliepetersen.com</a>
   </nav>
@@ -62,9 +62,27 @@
   </nav>
 
   <nav class="sidebar">
-    <a class="sidebar__link" href="#">Download Resume<img class="sidebar__icon" src="src/img/resume.svg"></img></a>
-    <a class="sidebar__link" href="#">My Other Half<img class="sidebar__icon" src="src/img/heart.svg"></img></a>
-    <a class="sidebar__link" href="#">Github Repository<img class="sidebar__icon" src="src/img/github.svg"></img></a>
+    <div class="sidebar__container">
+      <a class="sidebar__icon" href="resume.pdf"><img src="src/img/resume.svg"></img></a>
+      <div class="sidebar__description">
+        <p class="sidebar__text">Download Resume</p>
+        <div class="sidebar__line"></div>
+      </div>
+    </div>
+    <div class="sidebar__container">
+      <a class="sidebar__icon" href="http://www.ewanpetersen.com" target="_blank"><img src="src/img/heart.svg"></img></a>
+      <div class="sidebar__description">
+        <p class="sidebar__text">My Other Half</p>
+        <div class="sidebar__line"></div>
+      </div>
+    </div>
+    <div class="sidebar__container">
+      <a class="sidebar__icon" href="http://www.github.com/kelliepetersen/portfolio" target="_blank"><img src="src/img/github.svg"></img></a>
+      <div class="sidebar__description">
+        <p class="sidebar__text">Github Repository</p>
+        <div class="sidebar__line"></div>
+      </div>
+    </div>
   </nav>
 
   <a class="back-to-top back-to-top--hidden" href=#home>&uarr;</a>

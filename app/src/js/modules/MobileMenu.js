@@ -7,23 +7,25 @@ class MobileMenu {
     this.modal = document.getElementsByClassName('modal');
     this.events();
   }
+
   events() {
-    this.menuIcon[0].addEventListener("click", this.toggleMenu.bind(this));
     this.menuIcon[0].addEventListener("click", this.animateMenu.bind(this));
     this.menuIcon[0].addEventListener("click", this.toggleBackground.bind(this));
     this.menuIcon[0].addEventListener("click", this.toggleModal.bind(this));
+    this.modal[0].addEventListener("click", () => {
+      if (event.target.classList.contains('modal__link')) {
+        this.animateMenu();
+        this.toggleBackground();
+        this.toggleModal();
+      }
+    });
   }
-  toggleMenu() {
-    this.menu[0].classList.toggle("nav__list--is-open");
-    Array.from(this.listItem).forEach(function (item) {
-      item.classList.toggle("nav__link--is-open");
-    })
+
+  animateMenu() {
+    this.menuIcon[0].classList.toggle("open");
   }
   toggleBackground() {
     this.background[0].classList.toggle("menu__background--is-open");
-  }
-  animateMenu() {
-    this.menuIcon[0].classList.toggle("open");
   }
   toggleModal() {
     this.modal[0].classList.toggle("modal--is-open");

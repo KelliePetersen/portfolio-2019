@@ -20,7 +20,7 @@
     }
 
     @mixin atWide {
-      left: calc(50% - 180px);
+      left: calc(50% - 175px);
       transform: translate(-50%, -50%);
       max-width: 1000px;
     }
