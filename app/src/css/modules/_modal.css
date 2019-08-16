@@ -1,0 +1,69 @@
+.modal {
+  display: flex;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 20;
+  width: 85vw;
+  max-width: 600px;
+  height: 80vh;
+  font-family: 'Poppins';
+  font-weight: 300;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.2s;
+
+  @mixin atMobile {
+    flex-direction: row;
+    align-items: flex-end;
+    height: 60vh;
+  }
+
+  &__logo {
+    @mixin atMobile {
+      display: none;
+    }
+  }
+
+  &__container {
+    padding-left: 0;
+    margin: 5px 0;
+  }
+
+  &__container--big &__link {
+    margin: 5px 0;
+    font-weight: 500;
+    responsive-font-size: 4rem;
+  }
+
+  &__list-item {
+    list-style-type: none;
+  }
+  
+  &__link {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--white);
+    margin: 5px 0;
+    responsive-font-size: 2rem;
+  }
+
+  &__email {
+    font-size: 1em;
+    @mixin atMobile {
+      position: absolute;
+      bottom: -15%;
+      right: 0%;
+    }
+  }
+
+  &--is-open {
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+    transition-delay: 0.35s;
+  }
+}

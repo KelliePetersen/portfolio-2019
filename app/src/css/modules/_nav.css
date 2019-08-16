@@ -8,7 +8,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  z-index: 15;
+  z-index: 10;
   text-decoration: none;
 
   @mixin atLarge {
@@ -97,6 +97,11 @@
     height: 50px;
     border-radius: 50%;
     margin-left: 0;
+    transition: 0.3s;
+    
+    &:hover {
+      transform: scale(1.2);
+    }
   }
 
   &__email-icon {
