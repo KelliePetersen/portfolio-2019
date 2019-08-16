@@ -3,8 +3,12 @@
   height: 100vh;
   position: relative;
 
+  @mixin atMedium {
+    background-image: linear-gradient(165deg, #191919 30%, #212121 60%);
+  }
+
   &__container {
-    margin-left: 7.5vw;
+    left: 7.5vw;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -14,16 +18,33 @@
       top: calc(50vh - 100px);
       transform: none;
     }
+
+    @mixin atWide {
+      left: calc(50% - 180px);
+      transform: translate(-50%, -50%);
+      max-width: 1000px;
+    }
   }
 
   &__heading {
     font-family: 'Montserrat', sans-serif;
     responsive-font-size: 6rem;
     margin: 0;
+    max-width: 80%;
   }
 
   &__heading-span {
     color: var(--dark-gray);
+  }
+
+  &__span {
+    display: block;
+    @mixin atMobile {
+      display: inline;
+    }
+    @mixin atLarge {
+      display: inline;
+    }
   }
 
   &__subheading {
@@ -62,5 +83,11 @@
     position: absolute;
     margin-top: 5px;
     margin-left: 15px;
+  }
+
+  &__subheading, &__button {
+    @mixin atLarge {
+      margin-left: 355px;
+    }
   }
 }

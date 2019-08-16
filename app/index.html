@@ -45,7 +45,7 @@
 
   <div class="hero" id="home">
     <div class="hero__container">
-      <h1 class="hero__heading"><span class="hero__heading-span">Hi, I'm </span>Kellie.</h1>
+      <h1 class="hero__heading"><span class="hero__heading-span">Hi, <span class="hero__span">I'm </span></span>Kellie.</h1>
       <p class="hero__subheading">I'm a front-end developer and wannabe designer currently working for <a href="http://www.novelleweb.com" target="_blank" class="hero__link">Novelle Web & Software</a>.
       <span class="hero__subheading-span">I'm available for small freelance projects.</span></p>
       <a href="#contact" class="button hero__button">Get in touch<img src="src/img/arrow.svg" class="hero__arrow"/></a>
@@ -56,41 +56,47 @@
     <h2 class="text__heading">About me.</h2>
     <div class="about__container">
       
-      <div class="text__container">
-        <h3 class="text__subheading">Who I am</h3>
-        <p class="text__paragraph">I'm Kellie, a front-end developer who sometimes attempts designing things. I grew up in Yeppoon, Australia.</p>
-        <p class="text__paragraph">I moved to the USA 2 years ago, and I'm currently based in Atlanta, Georgia. I love turning interesting ideas into
-        usable products.</p>
+      <div class="about__inner-container">
+        <div class="text__container">
+          <h3 class="text__subheading">Who I am</h3>
+          <p class="text__paragraph">I'm Kellie, a front-end developer who sometimes attempts designing things. I grew up in Yeppoon, Australia.</p>
+          <p class="text__paragraph">I moved to the USA 2 years ago, and I'm currently based in Atlanta, Georgia. I love turning interesting ideas into
+          usable products.</p>
+        </div>
+  
+        <div class="about__image-container">
+          <div class="about__image-border"></div>
+          <img src="src/img/kellie.jpg" alt="A photo of Kellie Petersen" class="about__image">
+          <div class="about__circle"></div>
+        </div>
       </div>
 
-      <div class="about__image-container">
-        <div class="about__image-border"></div>
-        <img src="src/img/kellie.jpg" alt="A photo of Kellie Petersen" class="about__image">
-        <div class="about__circle"></div>
-      </div>
-
-      <div class="about__australia-container">
-        <img src="src/img/australia.svg" alt="An outline of Australia, with a map pin on Brisbane" class="about__australia">
-        <div class="about__map-pin"></div>
-        <div class="about__map-line"></div>
-      </div>
-      
-      <div class="text__container">
-        <h3 class="text__subheading">Where I started</h3>
-        <p class="text__paragraph">I create and design websites and applications. I work on the
-        front-end and occassionally design. I dabble with PHP.</p>
-        <p class="text__paragraph">I'm currently working for Novelle Web & Software, a business I
-        co-founded with my better half.</p>
-      </div>
-      
-      <div class="text__container text--margin">
-        <h3 class="text__subheading">What I do</h3>
-        <p class="text__paragraph">I'm currently working for Novelle Web & Software, a business I
+      <div class="about__inner-container">
+        <div class="about__australia-container">
+          <img src="src/img/australia.svg" alt="An outline of Australia, with a map pin on Brisbane" class="about__australia">
+          <div class="about__map-pin"></div>
+          <div class="about__map-line"></div>
+        </div>
+        
+        <div class="text__container">
+          <h3 class="text__subheading">Where I started</h3>
+          <p class="text__paragraph">I create and design websites and applications. I work on the
+          front-end and occassionally design. I dabble with PHP.</p>
+          <p class="text__paragraph">I'm currently working for Novelle Web & Software, a business I
           co-founded with my better half.</p>
-        <p class="text__paragraph">I value creating websites with readable and maintainable code, that are accessible to everyone.</p>
+        </div>
       </div>
-
-      <img src="src/img/city.svg" class="about__city"></img>
+      
+      <div class="about__inner-container">
+        <div class="text__container about--margin">
+          <h3 class="text__subheading">What I do</h3>
+          <p class="text__paragraph">I'm currently working for Novelle Web & Software, a business I
+            co-founded with my better half.</p>
+          <p class="text__paragraph">I value creating websites with readable and maintainable code, that are accessible to everyone.</p>
+        </div>
+  
+        <img src="src/img/city.svg" class="about__city"></img>
+      </div>
     </div>
   </section>
 

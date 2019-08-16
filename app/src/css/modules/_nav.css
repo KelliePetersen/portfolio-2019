@@ -33,4 +33,8 @@
   &__section {
     list-style-type: none;
   }
+
+  &__list {
+    margin: 0;
+  }
 }

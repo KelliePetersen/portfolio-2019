@@ -3,12 +3,48 @@
   &__container {
     position: relative;
   }
+  
+  &__inner-container {
+    max-width: 600px;
+    margin: 0 auto;
+    @mixin atLarge {
+      display: grid;
+      grid-template-columns: 1fr minmax(400px, 500px);
+      grid-column-gap: 50px;
+      width: 80%;
+      max-width: 1200px;
+      margin: 200px auto;
+    }
+  }
+
+  &__inner-container:nth-of-type(2) {
+    @mixin atLarge {
+      width: 100%;
+      max-width: 1400px;
+      height: 600px;
+      align-items: center;
+      padding-right: 50px;
+    }
+  }
+
+  &__inner-container:nth-of-type(3) {
+    @mixin atLarge {
+      grid-template-columns: minmax(200px, 500px) minmax(300px, 750px);
+      max-width: 1300px;
+      height: 500px;
+    }
+  }
 
   &__image-container {
     width: 70%;
     max-width: 400px;
-    margin: 20vw auto;
+    margin: calc(5vw + 70px) auto;
     position: relative;
+
+    @mixin atLarge {
+      width: 100%;
+      margin: 0 0 0 auto;
+    }
   }
 
   &__image {
@@ -43,9 +79,22 @@
 
   &__australia-container {
     position: absolute;
-    bottom: 200px;
+    bottom: calc(100px + 45vw);
     width: 100%;
     height: 450px;
+    max-width: 750px;
+
+    @mixin atMedium {
+      left: 0;
+      height: 600px;
+      bottom: 300px;
+    }
+
+    @mixin atLarge {
+      position: relative;
+      bottom: 0;
+      height: 100%;
+    }
   }
 
   &__australia {
@@ -54,6 +103,12 @@
     width: 60%;
     object-fit: cover;
     object-position: right top;
+    @mixin atMedium {
+      width: 70%;
+    }
+    @mixin atLarge {
+      width: 650px;
+    }
   }
 
   &__map-pin {
@@ -65,22 +120,54 @@
     border: 2px solid var(--main-color);
     border-radius: 50%;
     background-image: radial-gradient(var(--main-color) 30%, transparent 35%);
+    @mixin atMedium {
+      right: 40%;
+    }
+    @mixin atLarge {
+      left: calc(450px + 5vw);
+    }
   }
 
   &__map-line {
     position: absolute;
-    right: calc(40% - 20px);
+    right: calc(40% - 25px);
     top: 30%;
     width: 400px; 
-    height: 450px;  
+    height: 500px;  
     border: dashed 2px var(--gray);
     border-color: transparent var(--gray) transparent transparent;
     border-radius: 50%;
     opacity: 0.2;
+    @mixin atMedium {
+      top: 24%;
+      right: 210px;
+      width: 800px;
+      height: 700px;
     }
+    @mixin atLarge {
+      height: 1000px;
+      transform: rotate(-30deg);
+      left: calc(5vw + 10px);
+      top: 34%;
+    }
+  }
 
   &__city {
     width: 100%;
+    max-width: 750px;
+    @mixin atLarge {
+      margin: 50px 0 0 auto;
+    }
   }
-
+  
+  &--margin {
+    margin-top: 30vw;
+    margin-bottom: 50px;
+    @mixin atMedium {
+      margin-top: 250px;
+    }
+    @mixin atLarge {
+      margin: 0;
+    }
+  }
 }

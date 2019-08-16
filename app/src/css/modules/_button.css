@@ -1,4 +1,5 @@
 .button {
+  cursor: pointer;
   display: block;
   background-color: var(--main-color);
   color: var(--white);

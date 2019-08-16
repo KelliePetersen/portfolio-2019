@@ -3,8 +3,9 @@
   &__container {
     @mixin atLarge {
       display: grid;
-      grid-template-columns: 30% 70%;
+      grid-template-columns: 40% 60%;
       grid-row-gap: 150px;
+      width: 95%;
       max-width: 1200px;
       margin: 0 auto;
     }
@@ -64,9 +65,12 @@
   }
 
   &__image {
-    width: 100px;
-    height: 100px;
+    width: 30vmin;
+    height: 20vmin;
     background-color: var(--main-color);
-    margin: 100px auto 0 auto;
+    margin: 100px auto 20px auto;
+    @mixin atLarge {
+      margin: 0 150px 0 auto;
+    }
   }
 }
