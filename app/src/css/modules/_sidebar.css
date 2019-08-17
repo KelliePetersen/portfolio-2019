@@ -36,7 +36,7 @@
     align-items: center;
     visibility: hidden;
     opacity: 0;
-    transition: 0.2s;
+    transition: 0.3s;
   }
 
   &__text {

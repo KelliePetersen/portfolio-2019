@@ -26,21 +26,10 @@
     display: none;
   }
 
-  &__logo {
-    @mixin atMobile {
-      display: none;
-    }
-  }
-
   &__container {
     padding-left: 0;
     margin: 5px 0;
     max-width: 350px;
-  }
-
-  &__container--big &__link {
-    font-weight: 500;
-    responsive-font-size: 4rem;
   }
 
   &__list-item {
@@ -53,11 +42,34 @@
     color: var(--white);
     padding: 5px 0;
     responsive-font-size: 2rem;
+    border-bottom: 2px solid transparent;
+    transition: 0.3s;
+
+    &:hover {
+      border-color: var(--white);
+    }
+  }
+  
+  &__container--big &__link {
+    font-weight: 500;
+    responsive-font-size: 4rem;
+
+    &:hover {
+      border-color: transparent;
+      transform: scale(1.1);
+    }
+  }
+
+  &__logo {
+    width: 34px;
+    @mixin atMobile {
+      display: none;
+    }
   }
 
   &__email {
     font-size: 1em;
-    max-width: 350px;
+    max-width: max-content;
     @mixin atMobile {
       position: absolute;
       bottom: -15%;

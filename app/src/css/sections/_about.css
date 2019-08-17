@@ -36,7 +36,7 @@
   }
 
   &__image-container {
-    width: 70%;
+    width: 70vmin;
     max-width: 400px;
     margin: calc(5vw + 70px) auto;
     position: relative;

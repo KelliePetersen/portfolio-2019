@@ -28,7 +28,7 @@
     transition-timing-function: ease-in;
 
     &--is-open {
-      transform: scale(35);
+      transform: scale(40);
       top: 50vh;
       right: 50vw;
       background-color: var(--main-color);
