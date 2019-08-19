@@ -12,11 +12,9 @@ class MobileMenu {
     this.menuIcon[0].addEventListener("click", this.animateMenu.bind(this));
     this.menuIcon[0].addEventListener("click", this.toggleBackground.bind(this));
     this.menuIcon[0].addEventListener("click", this.toggleModal.bind(this));
-    this.modal[0].addEventListener("click", () => {
+    this.modal[0].addEventListener("click", (event) => {
       if (event.target.classList.contains('modal__link')) {
-        this.animateMenu();
-        this.toggleBackground();
-        this.toggleModal();
+        this.closeMenu();
       }
     });
   }
@@ -29,6 +27,11 @@ class MobileMenu {
   }
   toggleModal() {
     this.modal[0].classList.toggle("modal--is-open");
+  }
+  closeMenu() {
+    this.menuIcon[0].classList.remove("open");
+    this.background[0].classList.remove("menu__background--is-open");
+    this.modal[0].classList.remove("modal--is-open");
   }
 }
 

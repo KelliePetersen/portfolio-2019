@@ -751,6 +751,7 @@ img {
     margin-top: 2px;
     border-bottom: 2px solid transparent;
     transition: 0.2s;
+    text-shadow: 2px 2px 2px var(--black);
   }
 
 .nav__link:hover {
