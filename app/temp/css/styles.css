@@ -408,8 +408,7 @@ img {
       position: absolute;
       top: 50%;
       left: 50%;
-      -webkit-transform: translate(-50%, -50%);
-              transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
     }
 
 /* DO NOT EDIT modules/_sprite.css
@@ -483,8 +482,7 @@ img {
   }
 
 .menu__background--is-open {
-      -webkit-transform: scale(40);
-              transform: scale(40);
+      transform: scale(40);
       top: 50vh;
       right: 50vw;
       background-color: var(--main-color);
@@ -498,8 +496,7 @@ img {
     border: 10px solid transparent;
     width: 45px;
     height: 40px;
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
     transition: 0.5s;
   }
 
@@ -510,10 +507,8 @@ img {
     height: 2px;
     background-color: var(--white);
     border-radius: 10px;
-    -webkit-transform-origin: left center;
-            transform-origin: left center;
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform-origin: left center;
+    transform: rotate(0deg);
     transition: .3s;
   }
 
@@ -530,8 +525,7 @@ img {
   }
 
 .menu__button.open .menu__line:nth-child(1) {
-    -webkit-transform: rotate(45deg);
-            transform: rotate(45deg);
+    transform: rotate(45deg);
     top: -2px;
     left: 0;
   }
@@ -542,8 +536,7 @@ img {
   }
 
 .menu__button.open .menu__line:nth-child(3) {
-    -webkit-transform: rotate(-45deg);
-            transform: rotate(-45deg);
+    transform: rotate(-45deg);
     top: 15px;
     left: 0;
   }
@@ -553,8 +546,7 @@ img {
   position: fixed;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   flex-direction: column;
   justify-content: space-between;
   z-index: 20;
@@ -629,8 +621,7 @@ img {
 
 .modal__container--big .modal__link:hover {
       border-color: transparent;
-      -webkit-transform: scale(1.1);
-              transform: scale(1.1);
+      transform: scale(1.1);
     }
 
 .modal__logo {
@@ -720,8 +711,7 @@ img {
   }
 
 .nav__logo:hover, .nav__name:hover {
-      -webkit-transform: scale(1.1);
-              transform: scale(1.1);
+      transform: scale(1.1);
     }
 
 .nav__line {
@@ -818,8 +808,7 @@ img {
   }
 
 .nav__email:hover {
-      -webkit-transform: scale(1.2);
-              transform: scale(1.2);
+      transform: scale(1.2);
     }
 
 .nav__email-icon {
@@ -832,8 +821,7 @@ img {
   position: fixed;
   top: 50%;
   right: 30px;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   z-index: 10;
 }
 
@@ -859,8 +847,7 @@ img {
   }
 
 .sidebar__icon:hover {
-      -webkit-transform: scale(1.2);
-              transform: scale(1.2);
+      transform: scale(1.2);
     }
 
 .sidebar__description {
@@ -1050,8 +1037,7 @@ img {
     height: 9px;
     background-color: var(--purple);
     margin-right: 10px;
-    -webkit-transform: rotate(45deg);
-            transform: rotate(45deg);
+    transform: rotate(45deg);
   }
 
 .shape--dark {
@@ -1102,8 +1088,7 @@ img {
     left: 7.5vw;
     position: absolute;
     top: 50%;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
+    transform: translateY(-50%);
     width: 85vw;
   }
 
@@ -1111,8 +1096,7 @@ img {
 
 .hero__container {
       top: calc(50vh - 100px);
-      -webkit-transform: none;
-              transform: none
+      transform: none
   }
   }
 
@@ -1120,8 +1104,7 @@ img {
 
 .hero__container {
       left: calc(50% - 175px);
-      -webkit-transform: translate(-50%, -50%);
-              transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
       max-width: 1000px
   }
   }
@@ -1409,8 +1392,7 @@ img {
 
 .about__map-line {
       height: 1000px;
-      -webkit-transform: rotate(-30deg);
-              transform: rotate(-30deg);
+      transform: rotate(-30deg);
       left: calc(5vw + 10px);
       top: 34%
   }

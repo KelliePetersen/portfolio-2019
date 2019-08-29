@@ -20,6 +20,7 @@ gulp.task('deleteDist', () => del('./docs'));
 gulp.task('copyFiles', () => {
   const paths = [
     './app/**/*',
+    '!./app/pages/**',
     '!./app/index.html',
     '!./app/src/**',
     '!./app/temp/**'
@@ -38,15 +39,15 @@ gulp.task('minifyImages', () =>
     .pipe(gulp.dest('./docs/src/img'))
 );
 
-gulp.task('usemin', () =>
-  gulp.src('./app/index.html')
+gulp.task('usemin', () => {
+  gulp.src('./app/**/*.html')
     .pipe(usemin({
-      css: [cleanCSS({ compatibility: 'ie8' }), rev()],
-      html: [htmlmin({ collapseWhitespace: true })],
+      css: [function () {return cleanCSS({ compatibility: 'ie8' })}, function() {return rev()}],
+      html: [ function() {return htmlmin({ collapseWhitespace: true })}],
       js: [function() {return rev()}, function() {return uglify()}]
     }))
-    .pipe(gulp.dest('./docs'))
-);
+    .pipe(gulp.dest('./docs'));
+});
 
 gulp.task(
   'build', 
