@@ -39,7 +39,7 @@ gulp.task('minifyImages', () =>
     .pipe(gulp.dest('./docs/src/img'))
 );
 
-gulp.task('usemin', () => {
+gulp.task('usemin', (cb) => {
   gulp.src('./app/**/*.html')
     .pipe(usemin({
       css: [function () {return cleanCSS({ compatibility: 'ie8' })}, function() {return rev()}],
@@ -47,6 +47,7 @@ gulp.task('usemin', () => {
       js: [function() {return rev()}, function() {return uglify()}]
     }))
     .pipe(gulp.dest('./docs'));
+    cb();
 });
 
 gulp.task(
