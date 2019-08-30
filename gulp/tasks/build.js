@@ -20,8 +20,8 @@ gulp.task('deleteDist', () => del('./docs'));
 gulp.task('copyFiles', () => {
   const paths = [
     './app/**/*',
-    '!./app/pages/**',
-    '!./app/index.html',
+    '!./app/views/**',
+    '!./app/**/*.html',
     '!./app/src/**',
     '!./app/temp/**'
   ];
@@ -40,7 +40,7 @@ gulp.task('minifyImages', () =>
 );
 
 gulp.task('usemin', (cb) => {
-  gulp.src('./app/**/*.html')
+  gulp.src('./app/*.html')
     .pipe(usemin({
       css: [function () {return cleanCSS({ compatibility: 'ie8' })}, function() {return rev()}],
       html: [ function() {return htmlmin({ collapseWhitespace: true })}],
@@ -54,6 +54,7 @@ gulp.task(
   'build', 
   gulp.series(
     'deleteDist', 
+    'fileInclude',
     'copyFiles', 
     'sprite', 
     'minifyImages', 

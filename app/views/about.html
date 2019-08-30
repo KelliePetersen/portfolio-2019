@@ -1,18 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>About Me - Kellie Petersen</title>
-  <!-- build:css ../src/css/styles.css -->
-  <link rel="stylesheet" href="../temp/css/styles.css">
-  <!-- endbuild -->
-  <!-- build:js ../src/js/vendor.js -->
-  <script src="../temp/js/vendor.js"></script>
-  <!-- endbuild -->
-</head>
-<body>
+@@include('partials/header.html')
+@@include('partials/nav.html')
 
   <section class="text__section about" id="about">
     <h2 class="text__heading">About me.</h2>
@@ -30,14 +17,14 @@
 
         <div class="about__image-container">
           <div class="about__image-border"></div>
-          <img src="../src/img/kellie.jpg" alt="A photo of Kellie Petersen" class="about__image">
+          <img src="src/img/kellie.jpg" alt="A photo of Kellie Petersen" class="about__image">
           <div class="about__circle"></div>
         </div>
       </div>
 
       <div class="about__inner-container">
         <div class="about__australia-container">
-          <img src="../src/img/australia.svg" alt="An outline of Australia, with a map pin on Brisbane"
+          <img src="src/img/australia.svg" alt="An outline of Australia, with a map pin on Brisbane"
             class="about__australia">
           <div class="about__map-pin"></div>
           <div class="about__map-line"></div>
@@ -61,7 +48,7 @@
             everyone.</p>
         </div>
 
-        <img src="../src/img/city.svg" class="about__city"></img>
+        <img src="src/img/city.svg" class="about__city"></img>
       </div>
     </div>
   </section>

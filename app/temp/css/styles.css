@@ -355,7 +355,7 @@ template {
   --gray: #999999;
   --dark-gray: #3c3c3c;
   --darkest-gray: #252525;
-  --main-color: #d34a4a;
+  --main-color: #7555ff;
   --secondary-color: #ffcd55;
 }
 
@@ -416,10 +416,6 @@ img {
 
 .icon {
       background-image: url('../../src/img/sprites/sprite-1fdc15f5.svg');
-    }
-
-.no-svg .icon {
-      background-image: url('../../src/img/sprites/sprite-1fdc15f5.png');
     }
 
 .icon--facebook {
