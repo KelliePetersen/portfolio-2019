@@ -1,3 +1,7 @@
 .i-about {
   background-color: var(--secondary-bg);
+
+  &__button {
+    margin-top: 40px;
+  }
 }

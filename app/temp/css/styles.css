@@ -1016,7 +1016,7 @@ img {
   font-weight: 500;
   font-size: 0.875em;
   text-decoration: none;
-  padding: 15px 20px;
+  padding: 15px 25px;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
@@ -1033,7 +1033,7 @@ img {
     position: absolute;
     width: 30px;
     margin-top: 5px;
-    margin-left: 10px;
+    margin-left: 15px;
   }
 
 .button--oval {
@@ -1225,8 +1225,9 @@ img {
   }
 
 .footer {
+  background-color: var(--secondary-bg);
   text-align: center;
-  margin-bottom: 30px;
+  padding: 40px 0 30px 0;
   font-size: 0.75em;
   color: var(--gray);
   letter-spacing: 0px;
@@ -1236,7 +1237,12 @@ img {
   background-color: var(--secondary-bg);
 }
 
+.i-about__button {
+    margin-top: 40px;
+  }
+
 .i-skills__languages {
+    margin-top: 50px;
     margin-bottom: 80px;
   }
 
@@ -1259,6 +1265,10 @@ img {
 .i-skills__item {
     margin: 50px 0;
   }
+
+.projects {
+  background-color: var(--secondary-bg);
+}
 
 .projects__container {
     position: relative;
@@ -1362,6 +1372,10 @@ img {
 
 .projects__container:nth-of-type(2) .projects__image {
     grid-row: 1 / 2;
+  }
+
+.projects__button {
+    background-color: var(--main-color);
   }
 
 .about__container {
@@ -1680,7 +1694,8 @@ img {
   }
 
 .contact {
-  margin-bottom: 100px;
+  padding-top: 20vw;
+  margin-bottom: 70px;
 }
 
 .contact__text {
