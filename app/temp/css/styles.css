@@ -357,6 +357,8 @@ template {
   --darkest-gray: #252525;
   --main-color: #7555ff;
   --secondary-color: #ffcd55;
+  --main-bg: #1e1e1e;
+  --secondary-bg: #212121;
 }
 
 html {
@@ -994,8 +996,9 @@ img {
 .button {
   cursor: pointer;
   display: block;
-  background-color: var(--main-color);
+  background-color: transparent;
   color: var(--white);
+  border: 2px solid var(--main-color);
   font-family: 'Poppins', 'Montserrat', sans-serif;
   font-weight: 500;
   font-size: 0.875em;
@@ -1004,7 +1007,6 @@ img {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  border-radius: 5px;
 }
 
 @media (min-width: 768px) {
@@ -1025,6 +1027,7 @@ img {
     border-radius: 20% / 50%;
     padding: 16px 34px;
     font-size: 0.875em;
+    background-color: var(--main-color);
   }
 
 .shape__diamond {
@@ -1184,7 +1187,8 @@ img {
 
 .hero__button {
     font-size: 1em;
-    padding: 20px 34px;
+    padding: 18px 34px;
+    background-color: var(--main-color);
   }
 
 .hero__arrow {
@@ -1200,6 +1204,14 @@ img {
       margin-left: 355px
   }
   }
+
+.footer {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 0.75em;
+  color: var(--gray);
+  letter-spacing: 0px;
+}
 
 .about__container {
     position: relative;
@@ -1700,11 +1712,3 @@ img {
     text-decoration: none;
     border-bottom: 1px solid var(--white);
   }
-
-.footer {
-  text-align: center;
-  margin-bottom: 30px;
-  font-size: 0.75em;
-  color: var(--gray);
-  letter-spacing: 0px;
-}

@@ -1,15 +1,15 @@
 .button {
   cursor: pointer;
   display: block;
-  background-color: var(--main-color);
+  background-color: transparent;
   color: var(--white);
+  border: 2px solid var(--main-color);
   font-family: 'Poppins', 'Montserrat', sans-serif;
   font-weight: 500;
   font-size: 0.875em;
   text-decoration: none;
   padding: 15px 20px;
   width: max-content;
-  border-radius: 5px;
 
   @mixin atMedium {
     font-size: 1em;
@@ -26,5 +26,6 @@
     border-radius: 20% / 50%;
     padding: 16px 34px;
     font-size: 0.875em;
+    background-color: var(--main-color);
   }
 }

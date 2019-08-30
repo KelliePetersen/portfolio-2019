@@ -76,7 +76,8 @@
 
   &__button {
     font-size: 1em;
-    padding: 20px 34px;
+    padding: 18px 34px;
+    background-color: var(--main-color);
   }
 
   &__arrow {
