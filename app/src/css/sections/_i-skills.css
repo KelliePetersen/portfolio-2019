@@ -1,0 +1,24 @@
+.i-skills {
+
+  &__languages {
+    margin-bottom: 80px;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    width: max-content;
+  }
+
+  &__icon {
+    width: 100px;
+    height: 100px;
+    background-color: var(--dark-gray);
+  }
+
+  &__item {
+    margin: 50px 0;
+  }
+}

@@ -1,9 +1,9 @@
 .text {
 
   &__section {
-    margin-bottom: 30vw;
+    padding: 20vw 0;
     @mixin atMedium {
-      margin-bottom: 200px;
+     padding: 200px 0;
     }
   }
 
@@ -26,8 +26,8 @@
 
   &__heading {
     responsive-font-size: 4.5rem;
-    text-align: center;
-    margin-bottom: calc(50px + 5vw);
+    margin: 0;
+    margin-bottom: calc(30px + 1vmin);
   }
 
   &__subheading {
@@ -36,6 +36,11 @@
     @mixin atMedium {
       margin-top: 0;
     }
+  }
+
+  &__small-heading {
+    color: var(--gray);
+    font-size: 1.125rem;
   }
 
   &__paragraph {
@@ -48,6 +53,14 @@
 
   &--no-margin {
     margin-bottom: 30px;
+  }
+
+  &--white {
+    color: var(--white);
+  }
+
+  &--center {
+    text-align: center;
   }
 
   &--hidden {
