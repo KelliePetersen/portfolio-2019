@@ -670,6 +670,16 @@ img {
   text-decoration: none;
 }
 
+@media (min-width: 768px) {
+
+.nav {
+    background-color: var(--main-bg);
+    width: 100%;
+    padding-left: 50px;
+    margin: 0
+}
+  }
+
 @media (min-width: 1200px) {
 
 .nav {
@@ -680,8 +690,7 @@ img {
 @media (min-width: 1700px) {
 
 .nav {
-    width: calc(100% - 130px);
-    margin-left: 75px
+    padding: 0 50px
 }
   }
 
@@ -703,14 +712,6 @@ img {
       margin-right: 25px
   }
   }
-
-.nav__logo, .nav__name {
-    transition: 0.2s;
-  }
-
-.nav__logo:hover, .nav__name:hover {
-      transform: scale(1.1);
-    }
 
 .nav__line {
     display: none;
@@ -739,7 +740,6 @@ img {
     margin-top: 2px;
     border-bottom: 2px solid transparent;
     transition: 0.2s;
-    text-shadow: 2px 2px 2px var(--black);
   }
 
 .nav__link:hover {
@@ -1074,14 +1074,8 @@ img {
   width: 100vw;
   height: 100vh;
   position: relative;
+  background-color: var(--main-bg);
 }
-
-@media (min-width: 768px) {
-
-.hero {
-    background-image: linear-gradient(165deg, #191919 30%, #212121 60%)
-}
-  }
 
 .hero__container {
     left: 7.5vw;
@@ -1102,17 +1096,24 @@ img {
 @media (min-width: 1400px) {
 
 .hero__container {
-      left: calc(50% - 175px);
+      left: 50%;
       transform: translate(-50%, -50%);
-      max-width: 1000px
+      max-width: 1000px;
+      width: -webkit-max-content;
+      width: -moz-max-content;
+      width: max-content
   }
   }
 
 .hero__heading {
+    position: relative;
     font-family: 'Montserrat', sans-serif;
     font-size: 6rem;
     margin: 0;
     max-width: 80%;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
   }
 
 @media (max-width: 768px), (max-height: 768px) {
@@ -1124,6 +1125,18 @@ img {
 
 .hero__heading-span {
     color: var(--dark-gray);
+  }
+
+@media (min-width: 1400px) {
+
+.hero__heading-span {
+      width: -webkit-max-content;
+      width: -moz-max-content;
+      width: max-content;
+      position: absolute;
+      transform: translateX(calc(-100% - 30px));
+      transform-origin: right top
+  }
   }
 
 .hero__span {
@@ -1196,13 +1209,6 @@ img {
     margin-top: 5px;
     margin-left: 15px;
     width: 40px;
-  }
-
-@media (min-width: 1400px) {
-
-.hero__subheading, .hero__button {
-      margin-left: 355px
-  }
   }
 
 .footer {

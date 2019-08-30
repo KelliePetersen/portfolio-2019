@@ -11,13 +11,19 @@
   z-index: 10;
   text-decoration: none;
 
+  @mixin atMedium {
+    background-color: var(--main-bg);
+    width: 100%;
+    padding-left: 50px;
+    margin: 0;
+  }
+
   @mixin atLarge {
     height: 100px;
   }
 
   @mixin atMonitor {
-    width: calc(100% - 130px);
-    margin-left: 75px;
+    padding: 0 50px;
   }
 
   &__container {
@@ -33,13 +39,6 @@
     @mixin atMedium {
       position: static;
       margin-right: 25px;
-    }
-  }
-
-  &__logo, &__name {
-    transition: 0.2s;
-    &:hover {
-      transform: scale(1.1);
     }
   }
   
@@ -69,7 +68,6 @@
     margin-top: 2px;
     border-bottom: 2px solid transparent;
     transition: 0.2s;
-    text-shadow: 2px 2px 2px var(--black);
 
     &:hover {
       border-color: var(--main-color);

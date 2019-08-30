@@ -2,10 +2,7 @@
   width: 100vw;
   height: 100vh;
   position: relative;
-
-  @mixin atMedium {
-    background-image: linear-gradient(165deg, #191919 30%, #212121 60%);
-  }
+  background-color: var(--main-bg);
 
   &__container {
     left: 7.5vw;
@@ -20,21 +17,30 @@
     }
 
     @mixin atWide {
-      left: calc(50% - 175px);
+      left: 50%;
       transform: translate(-50%, -50%);
       max-width: 1000px;
+      width: max-content;
     }
   }
 
   &__heading {
+    position: relative;
     font-family: 'Montserrat', sans-serif;
     responsive-font-size: 6rem;
     margin: 0;
     max-width: 80%;
+    width: max-content;
   }
 
   &__heading-span {
     color: var(--dark-gray);
+    @mixin atWide {
+      width: max-content;
+      position: absolute;
+      transform: translateX(calc(-100% - 30px));
+      transform-origin: right top;
+    }
   }
 
   &__span {
@@ -85,11 +91,5 @@
     margin-top: 5px;
     margin-left: 15px;
     width: 40px;
-  }
-
-  &__subheading, &__button {
-    @mixin atWide {
-      margin-left: 355px;
-    }
   }
 }
