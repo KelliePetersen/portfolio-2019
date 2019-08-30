@@ -1,8 +1,14 @@
 .i-skills {
 
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 220px);
+    grid-column-gap: 50px;
+    grid-row-gap: 40px;
+  }
+
   &__languages {
-    margin-top: 50px;
-    margin-bottom: 80px;
+    grid-row: 1 / 4;
   }
 
   &__grid {
@@ -13,13 +19,13 @@
     width: max-content;
   }
 
+  &__item:nth-child(2) {
+    margin-top: 55px;
+  }
+
   &__icon {
     width: 100px;
     height: 100px;
     background-color: var(--dark-gray);
-  }
-
-  &__item {
-    margin: 50px 0;
   }
 }

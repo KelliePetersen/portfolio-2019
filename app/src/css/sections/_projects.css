@@ -3,8 +3,8 @@
 
   &__container {
     position: relative;
-    width: 70vw;
-    height: 70vw;
+    width: 70vmin;
+    height: 70vmin;
     max-width: 600px;
     max-height: 550px;
     margin: 10px auto;
@@ -63,8 +63,8 @@
 
   &__text {
     position: absolute;
-    bottom: calc(20vw - 30px);
-    left: calc(20vw - 50px);
+    bottom: calc(20vmin - 30px);
+    left: calc(20vmin - 50px);
 
     @mixin atMedium {
       position: static;
@@ -85,5 +85,8 @@
 
   &__button {
     background-color: var(--main-color);
+    @mixin atMedium {
+      background-color: transparent;
+    }
   }
 }

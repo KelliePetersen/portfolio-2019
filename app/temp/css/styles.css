@@ -373,7 +373,7 @@ html, body {
 }
 
 body {
-  font-family: 'Roboto', arial, sans-serif;
+  font-family: 'Poppins', arial, sans-serif;
   background-color: var(--main-bg);
   color: var(--white);
   font-size: 1rem;
@@ -884,7 +884,7 @@ img {
   }
 
 .text__section {
-    padding: 20vw 0;
+    padding: 20vmin 0;
   }
 
 @media (min-width: 768px) {
@@ -958,18 +958,18 @@ img {
 
 .text__paragraph {
     font-weight: 300;
-    line-height: 1.5;
+    line-height: 1.75;
     color: var(--gray);
-    font-size: 1.25rem;
+    font-size: 1rem;
     max-width: 550px;
   }
 
-@media (max-width: 768px), (max-height: 768px) {
+@media (min-width: 768px) {
 
-  .text__paragraph {
-    font-size: calc(1.00625rem + 0.50781vmin);
+.text__paragraph {
+      font-size: 1.25rem
   }
-}
+  }
 
 .text--no-margin {
     margin-bottom: 30px;
@@ -977,6 +977,8 @@ img {
 
 .text--white {
     color: var(--white);
+    line-height: 1.5;
+    font-weight: 200;
   }
 
 .text--center {
@@ -1227,7 +1229,7 @@ img {
 .footer {
   background-color: var(--secondary-bg);
   text-align: center;
-  padding: 40px 0 30px 0;
+  padding: 30px 0 20px 0;
   font-size: 0.75em;
   color: var(--gray);
   letter-spacing: 0px;
@@ -1241,9 +1243,15 @@ img {
     margin-top: 40px;
   }
 
+.i-skills__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 220px);
+    grid-column-gap: 50px;
+    grid-row-gap: 40px;
+  }
+
 .i-skills__languages {
-    margin-top: 50px;
-    margin-bottom: 80px;
+    grid-row: 1 / 4;
   }
 
 .i-skills__grid {
@@ -1256,14 +1264,14 @@ img {
     width: max-content;
   }
 
+.i-skills__item:nth-child(2) {
+    margin-top: 55px;
+  }
+
 .i-skills__icon {
     width: 100px;
     height: 100px;
     background-color: var(--dark-gray);
-  }
-
-.i-skills__item {
-    margin: 50px 0;
   }
 
 .projects {
@@ -1272,8 +1280,8 @@ img {
 
 .projects__container {
     position: relative;
-    width: 70vw;
-    height: 70vw;
+    width: 70vmin;
+    height: 70vmin;
     max-width: 600px;
     max-height: 550px;
     margin: 10px auto;
@@ -1350,8 +1358,8 @@ img {
 
 .projects__text {
     position: absolute;
-    bottom: calc(20vw - 30px);
-    left: calc(20vw - 50px);
+    bottom: calc(20vmin - 30px);
+    left: calc(20vmin - 50px);
   }
 
 @media (min-width: 768px) {
@@ -1376,6 +1384,13 @@ img {
 
 .projects__button {
     background-color: var(--main-color);
+  }
+
+@media (min-width: 768px) {
+
+.projects__button {
+      background-color: transparent
+  }
   }
 
 .about__container {
@@ -1740,6 +1755,7 @@ img {
     border: none;
     margin: 0 auto;
     letter-spacing: 1px;
+    background-color: var(--main-color);
     background-image: url(/src/img/plane.svg);
     background-repeat: no-repeat;
     background-position: 90% 50%;

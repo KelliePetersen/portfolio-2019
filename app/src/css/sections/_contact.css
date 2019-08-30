@@ -44,6 +44,7 @@
     border: none;
     margin: 0 auto;
     letter-spacing: 1px;
+    background-color: var(--main-color);
     background-image: url(/src/img/plane.svg);
     background-repeat: no-repeat;
     background-position: 90% 50%;
