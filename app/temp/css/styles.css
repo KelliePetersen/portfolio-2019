@@ -1243,15 +1243,50 @@ img {
   background-color: var(--secondary-bg);
 }
 
+@media (min-width: 1200px) {
+
+.i-about__container {
+      display: grid;
+      grid-template-columns: 40% 60%;
+      width: 90vw;
+      max-width: 1200px;
+      margin: 0 auto;
+      align-items: center
+  }
+  }
+
+.i-about__image {
+    width: 300px;
+    height: 350px;
+    background-color: var(--dark-gray);
+  }
+
 .i-about__button {
     margin-top: 40px;
   }
 
+.i-skills {
+  width: 85%;
+  margin: 0 auto;
+  max-width: 1195px;
+}
+
 .i-skills__container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-column-gap: 50px;
-    grid-row-gap: 40px;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-column-gap: 80px;
+  }
+
+.i-skills__heading {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+@media (min-width: 1200px) {
+
+.i-skills__heading {
+      text-align: center
+  }
   }
 
 .i-skills__languages {
@@ -1268,14 +1303,18 @@ img {
     width: max-content;
   }
 
-.i-skills__item:nth-child(2) {
-    margin-top: 55px;
+.i-skills__item {
+    margin-top: 57px;
   }
 
 .i-skills__icon {
     width: 100px;
     height: 100px;
     background-color: var(--dark-gray);
+  }
+
+.i-skills__button {
+    margin-top: 50px;
   }
 
 .projects {

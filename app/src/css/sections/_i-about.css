@@ -1,6 +1,23 @@
 .i-about {
   background-color: var(--secondary-bg);
 
+  &__container {
+    @mixin atLarge {
+      display: grid;
+      grid-template-columns: 40% 60%;
+      width: 90vw;
+      max-width: 1200px;
+      margin: 0 auto;
+      align-items: center;
+    }
+  }
+
+  &__image {
+    width: 300px;
+    height: 350px;
+    background-color: var(--dark-gray);
+  }
+
   &__button {
     margin-top: 40px;
   }

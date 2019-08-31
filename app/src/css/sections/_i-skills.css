@@ -1,10 +1,20 @@
 .i-skills {
+  width: 85%;
+  margin: 0 auto;
+  max-width: 1195px;
 
   &__container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-column-gap: 50px;
-    grid-row-gap: 40px;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-column-gap: 80px;
+  }
+
+  &__heading {
+    margin-left: auto;
+    margin-right: auto;
+    @mixin atLarge {
+      text-align: center;
+    }
   }
 
   &__languages {
@@ -19,13 +29,17 @@
     width: max-content;
   }
 
-  &__item:nth-child(2) {
-    margin-top: 55px;
+  &__item {
+    margin-top: 57px;
   }
 
   &__icon {
     width: 100px;
     height: 100px;
     background-color: var(--dark-gray);
+  }
+
+  &__button {
+    margin-top: 50px;
   }
 }
