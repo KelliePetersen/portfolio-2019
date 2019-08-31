@@ -851,10 +851,11 @@ img {
 
 .sidebar__description {
     position: absolute;
-    left: -230px;
+    left: -280px;
     top: 25%;
-    width: 200px;
+    width: 250px;
     text-align: right;
+    font-weight: 200;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -1713,20 +1714,24 @@ img {
   }
   }
 
+.skills {
+  background-color: var(--secondary-bg);
+}
+
 @media (min-width: 1200px) {
 
 .skills__container {
       display: grid;
       grid-template-columns: 40% 60%;
-      grid-row-gap: 150px;
+      grid-row-gap: 200px;
       width: 95%;
       max-width: 1200px;
-      margin: 0 auto
+      margin: 100px auto
   }
   }
 
 .skills .text__paragraph {
-    max-width: 650px;
+    max-width: 600px;
   }
 
 .skills__list-container {
@@ -1791,8 +1796,8 @@ img {
   }
 
 .skills__image {
-    width: 30vmin;
-    height: 20vmin;
+    width: 300px;
+    height: 250px;
     background-color: var(--main-color);
     margin: 100px auto 20px auto;
   }
