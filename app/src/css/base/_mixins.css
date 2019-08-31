@@ -23,7 +23,7 @@
 }
 
 @define-mixin atMobile {
-  @media (max-height: 400px) {
+  @media (max-height: 450px) {
     @mixin-content;
   }
 }

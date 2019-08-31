@@ -557,7 +557,7 @@ img {
   transition: 0.2s;
 }
 
-@media (max-height: 400px) {
+@media (max-height: 450px) {
 
 .modal {
     flex-direction: row;
@@ -626,7 +626,7 @@ img {
     width: 34px;
   }
 
-@media (max-height: 400px) {
+@media (max-height: 450px) {
 
 .modal__logo {
       display: none
@@ -640,7 +640,7 @@ img {
     max-width: max-content;
   }
 
-@media (max-height: 400px) {
+@media (max-height: 450px) {
 
 .modal__email {
       position: absolute;
@@ -1100,7 +1100,7 @@ img {
     width: 85vw;
   }
 
-@media (max-height: 400px) {
+@media (max-height: 450px) {
 
 .hero__container {
       top: calc(50vh - 100px);
@@ -1158,7 +1158,7 @@ img {
     display: block;
   }
 
-@media (max-height: 400px) {
+@media (max-height: 450px) {
 
 .hero__span {
       display: inline
@@ -1189,7 +1189,7 @@ img {
   }
 }
 
-@media (max-height: 400px) {
+@media (max-height: 450px) {
 
 .hero__subheading {
       margin: 10px 0 20px 0
@@ -1245,7 +1245,7 @@ img {
 
 .i-skills__container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, 220px);
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-column-gap: 50px;
     grid-row-gap: 40px;
   }
