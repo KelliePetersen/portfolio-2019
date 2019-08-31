@@ -356,7 +356,8 @@ template {
   --dark-gray: #3c3c3c;
   --darkest-gray: #252525;
   --main-color: #7555ff;
-  --secondary-color: #ffcd55;
+  --secondary-color: #9883f8;
+  /* --secondary-color: #ffcd55; */
   --main-bg: #1e1e1e;
   --secondary-bg: #212121;
 }
@@ -1239,6 +1240,33 @@ img {
   letter-spacing: 0px;
 }
 
+.cta {
+  background-image: linear-gradient(to right, var(--main-color), var(--secondary-color));
+  background-color: var(--main-color);
+  display: grid;
+  align-items: center;
+  height: 300px;
+}
+
+@media (min-width: 768px) {
+
+.cta {
+    height: 400px
+}
+  }
+
+.cta__container {
+    width: 75%;
+    margin: 0 auto 25px auto;
+  }
+
+.cta__button {
+    border: none;
+    background-color: var(--white);
+    color: var(--black);
+    margin-top: 25px;
+  }
+
 .i-about {
   background-color: var(--secondary-bg);
 }
@@ -1247,18 +1275,28 @@ img {
 
 .i-about__container {
       display: grid;
-      grid-template-columns: 40% 60%;
+      grid-template-columns: -webkit-max-content -webkit-max-content;
+      grid-template-columns: max-content max-content;
+      grid-column-gap: 150px;
       width: 90vw;
-      max-width: 1200px;
+      max-width: 1000px;
       margin: 0 auto;
       align-items: center
   }
   }
 
 .i-about__image {
-    width: 300px;
-    height: 350px;
-    background-color: var(--dark-gray);
+    display: none;
+  }
+
+@media (min-width: 1200px) {
+
+.i-about__image {
+      display: block;
+      width: 300px;
+      height: 350px;
+      background-color: var(--dark-gray)
+  }
   }
 
 .i-about__button {
@@ -1446,6 +1484,10 @@ img {
   }
   }
 
+.about {
+  background-color: var(--secondary-bg);
+}
+
 .about__container {
     position: relative;
   }
@@ -1483,7 +1525,8 @@ img {
 .about__inner-container:nth-of-type(3) {
       grid-template-columns: minmax(200px, 500px) minmax(300px, 750px);
       max-width: 1300px;
-      height: 500px
+      height: 500px;
+      margin-bottom: 0
   }
   }
 
@@ -1833,6 +1876,7 @@ img {
 .contact__aside {
     text-align: center;
     font-size: 0.875em;
+    font-weight: 300;
     color: var(--gray);
     letter-spacing: 0.5px;
   }
@@ -1841,7 +1885,7 @@ img {
 
 .contact__aside {
       display: inline-block;
-      width: 300px
+      width: 350px
   }
   }
 

@@ -1,0 +1,22 @@
+.cta {
+  background-image: linear-gradient(to right, var(--main-color), var(--secondary-color));
+  background-color: var(--main-color);
+  display: grid;
+  align-items: center;
+  height: 300px;
+  @mixin atMedium {
+    height: 400px;
+  }
+
+  &__container {
+    width: 75%;
+    margin: 0 auto 25px auto;
+  }
+
+  &__button {
+    border: none;
+    background-color: var(--white);
+    color: var(--black);
+    margin-top: 25px;
+  }
+}
