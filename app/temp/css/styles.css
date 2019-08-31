@@ -1095,7 +1095,6 @@ img {
   width: 100vw;
   height: 100vh;
   position: relative;
-  background-color: var(--main-bg);
 }
 
 .hero__container {
@@ -1824,8 +1823,14 @@ img {
 .contact__text {
     width: 85%;
     text-align: center;
-    max-width: 500px;
     margin: 0 auto;
+  }
+
+@media (min-width: 1200px) {
+
+.contact__text {
+      width: 100%
+  }
   }
 
 .contact__form {
@@ -1898,4 +1903,71 @@ img {
     color: var(--white);
     text-decoration: none;
     border-bottom: 1px solid var(--white);
+  }
+
+.contact-page {
+  width: 100vw;
+  min-height: 100vh;
+  position: relative;
+}
+
+@media (min-width: 1400px) {
+
+.contact-page__container {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      max-width: 1200px;
+      width: -webkit-max-content;
+      width: -moz-max-content;
+      width: max-content;
+      display: grid;
+      grid-template-columns: 420px 650px;
+      grid-column-gap: 100px
+  }
+  }
+
+.contact-page__heading {
+    margin-left: 7.5%;
+    margin-top: 150px;
+    grid-column: 2 / 3;
+    margin-bottom: 30px;
+  }
+
+@media (min-width: 1200px) {
+
+.contact-page__heading {
+      margin: 0 0 50px 0
+  }
+  }
+
+.contact-page .contact__text {
+    text-align: left;
+  }
+
+@media (min-width: 768px) {
+
+.contact-page .contact__text {
+      margin-left: 7.5%
+  }
+  }
+
+@media (min-width: 1200px) {
+
+.contact-page .contact__text {
+      margin-left: 0
+  }
+  }
+
+.contact-page .contact__form {
+    margin-left: 7.5%;
+  }
+
+@media (min-width: 1200px) {
+
+.contact-page .contact__form {
+      margin: 0;
+      width: 100%
+  }
   }

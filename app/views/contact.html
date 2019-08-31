@@ -1,14 +1,14 @@
 @@include('partials/header.html')
 @@include('partials/nav.html')
 
-  <div class="hero" id="home">
-    <div class="hero__container">
-      <h1 class="hero__heading"><span class="hero__heading-span"><span class="hero__span">I'd love to </span></span>talk.
-      </h1>
-      <p class="hero__subheading">I'm a front-end developer and wannabe designer currently working for <a
-          href="http://www.novelleweb.com" target="_blank" class="hero__link">Novelle Web & Software</a>.
-        <span class="hero__subheading-span">I'm available for work on small projects.</span></p>
-      <a href="#contact" class="button hero__button">Get in touch<img src="src/img/arrow.svg" class="hero__arrow" /></a>
+  <div class="contact-page" id="home">
+    <div class="contact-page__container">
+      <h1 class="hero__heading contact-page__heading"><span class="hero__heading-span"><span class="hero__span">I'd love to </span></span>talk.</h1>
+      <p class="contact__text text__paragraph">Feel free to contact me by email or social media.
+        I'm currently available for freelance work on small projects and salary positions.</p>
+
+      @@include('partials/contact-form.html')
+      
     </div>
   </div>
 
