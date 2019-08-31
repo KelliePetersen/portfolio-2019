@@ -4,7 +4,16 @@
   position: relative;
 
   &__container {
+    padding-top: 20vh;
+    margin: 0 auto;
+    width: 85vw;
+    max-width: 650px;
+    @mixin atMedium {
+      padding-top: 150px;
+    }
     @mixin atWide {
+      padding: 0;
+      margin: 0;
       position: absolute;
       top: 50%;
       left: 50%;
@@ -18,27 +27,23 @@
   }
 
   &__heading {
-    margin-left: 7.5%;
-    margin-top: 150px;
-    grid-column: 2 / 3;
     margin-bottom: 30px;
-    @mixin atLarge {
-      margin: 0 0 50px 0;
+    max-width: 100%;
+    @mixin atWide {
+      margin-bottom: 50px;
+      grid-column: 2 / 3;
     }
   }
 
   & .contact__text {
     text-align: left;
-    @mixin atMedium {
-      margin-left: 7.5%;
-    }
-    @mixin atLarge {
-      margin-left: 0;
-    }
+    margin-left: 0;
+    width: 100%;
   }
 
   & .contact__form {
-    margin-left: 7.5%;
+    margin-left: 0;
+    width: 100%;
     @mixin atLarge {
       margin: 0;
       width: 100%;
