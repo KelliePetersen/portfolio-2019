@@ -890,7 +890,7 @@ img {
 @media (min-width: 768px) {
 
 .text__section {
-     padding: 200px 0
+     padding: 150px 0
   }
   }
 
@@ -983,6 +983,10 @@ img {
 
 .text--center {
     text-align: center;
+  }
+
+.text--margin {
+    margin-bottom: 15vmin;
   }
 
 .text--hidden {
@@ -1290,6 +1294,8 @@ img {
 @media (min-width: 768px) {
 
 .projects__container {
+      padding-left: 40px;
+      min-width: 768px;
       width: 80vw;
       max-width: 1500px;
       display: grid;
@@ -1304,6 +1310,14 @@ img {
     margin: calc(10vw + 20px) auto;
     grid-template-columns: minmax(200px, 800px) minmax(-webkit-min-content, 600px);
     grid-template-columns: minmax(200px, 800px) minmax(min-content, 600px);
+  }
+
+@media (min-width: 768px) {
+
+.projects__container:nth-of-type(2) {
+      padding-left: 0;
+      padding-right: 40px
+  }
   }
 
 @media (min-width: 1200px) {
@@ -1709,9 +1723,16 @@ img {
   }
 
 .contact {
-  padding-top: 20vw;
-  margin-bottom: 70px;
+  padding-top: 20vmin;
+  padding-bottom: 50px;
 }
+
+@media (min-width: 768px) {
+
+.contact {
+    padding-top: 150px
+}
+  }
 
 .contact__text {
     width: 85%;

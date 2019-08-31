@@ -1,6 +1,10 @@
 .contact {
-  padding-top: 20vw;
-  margin-bottom: 70px;
+  padding-top: 20vmin;
+  padding-bottom: 50px;
+
+  @mixin atMedium {
+    padding-top: 150px;
+  }
 
   &__text {
     width: 85%;

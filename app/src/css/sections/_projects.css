@@ -10,6 +10,8 @@
     margin: 10px auto;
 
     @mixin atMedium {
+      padding-left: 40px;
+      min-width: 768px;
       width: 80vw;
       max-width: 1500px;
       display: grid;
@@ -22,6 +24,10 @@
   &__container:nth-of-type(2) {
     margin: calc(10vw + 20px) auto;
     grid-template-columns: minmax(200px, 800px) minmax(min-content, 600px);
+    @mixin atMedium {
+      padding-left: 0;
+      padding-right: 40px;
+    }
     @mixin atLarge {
       grid-column-gap: 100px;
       margin: 300px auto;
