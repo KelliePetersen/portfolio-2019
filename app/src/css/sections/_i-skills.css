@@ -33,6 +33,13 @@
     margin-top: 57px;
   }
 
+  &__text {
+    color: var(--white);
+    line-height: 1.5;
+    responsive-font-size: 1.125rem;
+    letter-spacing: 0.5px;
+  }
+
   &__icon {
     width: 100px;
     height: 100px;
