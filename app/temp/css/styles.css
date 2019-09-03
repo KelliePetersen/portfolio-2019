@@ -624,7 +624,13 @@ img {
     }
 
 .modal__logo {
-    width: 34px;
+    position: relative;
+    max-width: 50px;
+    font-weight: 700;
+    font-family: 'Montserrat', 'Poppins';
+    font-size: 2.5rem;
+    border: none;
+    transition: 0.5s;
   }
 
 @media (max-height: 450px) {
@@ -632,6 +638,37 @@ img {
 .modal__logo {
       display: none
   }
+  }
+
+@media (min-width: 768px) {
+
+.modal__logo {
+      font-size: 4rem
+  }
+  }
+
+.modal__logo:hover {
+      transform: scale(1.2);
+    }
+
+.modal__logo:before {
+      content: "";
+      position: absolute;
+      top: 13.5px;
+      left: -3px;
+      bottom: 14px;
+      width: 10px;
+      background-color: var(--dark-gray);
+      z-index: -1;
+    }
+
+@media (min-width: 768px) {
+
+.modal__logo:before {
+        top: 18px;
+        left: -3px;
+        bottom: 18px
+    }
   }
 
 .modal__email {
@@ -701,18 +738,46 @@ img {
   }
 
 .nav__logo {
+    display: block;
+    text-decoration: none;
+    color: var(--white);
+    font-size: 2.5rem;
+    font-family: 'Montserrat', 'Poppins';
+    font-weight: 500;
     position: fixed;
-    top: 20px;
+    top: 10px;
     left: 30px;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
   }
 
 @media (min-width: 768px) {
 
 .nav__logo {
-      position: static;
-      margin-right: 25px
+      position: relative;
+      top: 0;
+      left: 0;
+      margin-right: 25px;
+      text-shadow: none
   }
   }
+
+@media (min-width: 1200px) {
+
+.nav__logo {
+      margin-bottom: 5px
+  }
+  }
+
+.nav__logo:before {
+      content: "";
+      position: absolute;
+      top: 9px;
+      left: -2px;
+      bottom: 9px;
+      width: 10px;
+      background-color: var(--main-color);
+      z-index: -1;
+    }
 
 .nav__line {
     display: none;
@@ -1919,7 +1984,7 @@ img {
     display: block;
     position: relative;
     z-index: -5;
-    bottom: -10px;
+    bottom: -15px;
     color: var(--gray);
     font-size: 0.875em;
     letter-spacing: 0.5px;
@@ -1955,6 +2020,7 @@ img {
 .contact__input {
     border: none;
     border-bottom: solid 2px var(--dark-gray);
+    height: 30px;
   }
 
 .contact__input:focus {

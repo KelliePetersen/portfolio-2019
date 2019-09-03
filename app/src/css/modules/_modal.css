@@ -61,9 +61,36 @@
   }
 
   &__logo {
-    width: 34px;
+    position: relative;
+    max-width: 50px;
+    font-weight: 700;
+    font-family: 'Montserrat', 'Poppins';
+    font-size: 2.5rem;
+    border: none;
+    transition: 0.5s;
     @mixin atMobile {
       display: none;
+    }
+    @mixin atMedium {
+      font-size: 4rem;
+    }
+    &:hover {
+      transform: scale(1.2);
+    }
+    &:before {
+      content: "";
+      position: absolute;
+      top: 13.5px;
+      left: -3px;
+      bottom: 14px;
+      width: 10px;
+      background-color: var(--dark-gray);
+      z-index: -1;
+      @mixin atMedium {
+        top: 18px;
+        left: -3px;
+        bottom: 18px;
+      }
     }
   }
 

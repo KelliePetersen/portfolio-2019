@@ -26,7 +26,7 @@
     display: block;
     position: relative;
     z-index: -5;
-    bottom: -10px;
+    bottom: -15px;
     color: var(--gray);
     font-size: 0.875em;
     letter-spacing: 0.5px;
@@ -62,6 +62,7 @@
   &__input {
     border: none;
     border-bottom: solid 2px var(--dark-gray);
+    height: 30px;
     &:focus {
       border-bottom: solid 2px var(--main-color);
     }

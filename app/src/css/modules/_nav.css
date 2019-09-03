@@ -32,13 +32,38 @@
   }
   
   &__logo {
+    display: block;
+    text-decoration: none;
+    color: var(--white);
+    font-size: 2.5rem;
+    font-family: 'Montserrat', 'Poppins';
+    font-weight: 500;
     position: fixed;
-    top: 20px;
+    top: 10px;
     left: 30px;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
 
     @mixin atMedium {
-      position: static;
+      position: relative;
+      top: 0;
+      left: 0;
       margin-right: 25px;
+      text-shadow: none;
+    }
+
+    @mixin atLarge {
+      margin-bottom: 5px;
+    }
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 9px;
+      left: -2px;
+      bottom: 9px;
+      width: 10px;
+      background-color: var(--main-color);
+      z-index: -1;
     }
   }
   
