@@ -62,17 +62,18 @@
 
   &__logo {
     position: relative;
+    user-select: none;
     max-width: 50px;
     font-weight: 700;
     font-family: 'Montserrat', 'Poppins';
-    font-size: 2.5rem;
+    font-size: 40px;
     border: none;
     transition: 0.5s;
     @mixin atMobile {
       display: none;
     }
     @mixin atMedium {
-      font-size: 4rem;
+      font-size: 64px;
     }
     &:hover {
       transform: scale(1.2);

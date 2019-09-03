@@ -34,8 +34,9 @@
   &__logo {
     display: block;
     text-decoration: none;
+    user-select: none;
     color: var(--white);
-    font-size: 2.5rem;
+    font-size: 40px;
     font-family: 'Montserrat', 'Poppins';
     font-weight: 500;
     position: fixed;
