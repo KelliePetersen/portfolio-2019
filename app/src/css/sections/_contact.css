@@ -16,6 +16,7 @@
   }
 
   &__form {
+    position: relative;
     width: 85%;
     max-width: 650px;
     margin: 50px auto;
@@ -23,9 +24,27 @@
 
   &__label {
     display: block;
+    position: relative;
+    z-index: -5;
+    bottom: -10px;
     color: var(--gray);
     font-size: 0.875em;
     letter-spacing: 0.5px;
+    transition: bottom 0.3s;
+
+    &--is-focus {
+      bottom: 5px;
+      color: var(--secondary-color);
+    }
+
+    &--required {
+      color: red;
+    }
+  }
+
+  &__label:nth-of-type(3) {
+    bottom: 5px;
+    margin-top: 10px;
   }
 
   &__input, &__message {
@@ -34,6 +53,10 @@
     background-color: transparent;
     color: var(--gray);
     outline: none;
+
+    &:required, &:invalid {
+      box-shadow: none;
+    }
   }
 
   &__input {
@@ -94,5 +117,9 @@
     color: var(--white);
     text-decoration: none;
     border-bottom: 1px solid var(--white);
+  }
+  
+  &--required {
+    border-color: red !important;
   }
 }

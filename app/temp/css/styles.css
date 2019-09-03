@@ -1850,6 +1850,7 @@ img {
   }
 
 .contact__form {
+    position: relative;
     width: 85%;
     max-width: 650px;
     margin: 50px auto;
@@ -1857,9 +1858,27 @@ img {
 
 .contact__label {
     display: block;
+    position: relative;
+    z-index: -5;
+    bottom: -10px;
     color: var(--gray);
     font-size: 0.875em;
     letter-spacing: 0.5px;
+    transition: bottom 0.3s;
+  }
+
+.contact__label--is-focus {
+      bottom: 5px;
+      color: var(--secondary-color);
+    }
+
+.contact__label--required {
+      color: red;
+    }
+
+.contact__label:nth-of-type(3) {
+    bottom: 5px;
+    margin-top: 10px;
   }
 
 .contact__input, .contact__message {
@@ -1869,6 +1888,10 @@ img {
     color: var(--gray);
     outline: none;
   }
+
+.contact__input:required, .contact__input:invalid, .contact__message:required, .contact__message:invalid {
+      box-shadow: none;
+    }
 
 .contact__input {
     border: none;
@@ -1937,6 +1960,10 @@ img {
     color: var(--white);
     text-decoration: none;
     border-bottom: 1px solid var(--white);
+  }
+
+.contact--required {
+    border-color: red !important;
   }
 
 .contact-page {
