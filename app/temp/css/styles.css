@@ -1011,9 +1011,10 @@ img {
   }
 
 .button {
+  position: relative;
   cursor: pointer;
   display: block;
-  background-color: transparent;
+  background: none;
   color: var(--white);
   border: 2px solid var(--main-color);
   font-family: 'Poppins', 'Montserrat', sans-serif;
@@ -1024,6 +1025,9 @@ img {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
+  overflow: hidden;
+  transition: 0.2s;
+  z-index: 0;
 }
 
 @media (min-width: 768px) {
@@ -1033,24 +1037,84 @@ img {
 }
   }
 
+.button:hover {
+    border-color: var(--secondary-color);
+  }
+
+.button:after {
+    content: "";
+    position: absolute;
+    background-color: var(--secondary-color);
+    bottom: 0;
+    right: 100%;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    transition: right 0.3s;
+  }
+
+.button:hover:after {
+    right: 0;
+  }
+
+.button__container {
+    position: relative;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    padding-right: 20px;
+  }
+
 .button__arrow {
     position: absolute;
     width: 30px;
-    margin-top: 5px;
-    margin-left: 15px;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+.button__arrow--big {
+      width: 40px;
+    }
+
+.button--big {
+    font-size: 1em;
+    padding: 18px 34px;
+  }
+
+.button--solid:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -2;
+    background-color: var(--main-color);
   }
 
 .button--oval {
     border-radius: 20% / 50%;
     padding: 16px 34px;
     font-size: 0.875em;
-    background-color: var(--main-color);
-    transition: 0.5s;
   }
 
-.button--oval:hover {
-      background-color: transparent;
-      
+.button--oval:after {
+      content: "";
+      position: absolute;
+      background-color: var(--secondary-color);
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 1px;
+      height: 1px;
+      border-radius: 50%;
+      z-index: -1;
+      transition: transform 0.5s;
+    }
+
+.button--oval:hover:after {
+      transform: scale(200);
     }
 
 .shape__diamond {
@@ -1220,19 +1284,6 @@ img {
     color: var(--white);
   }
 
-.hero__button {
-    font-size: 1em;
-    padding: 18px 34px;
-    background-color: var(--main-color);
-  }
-
-.hero__arrow {
-    position: absolute;
-    margin-top: 5px;
-    margin-left: 15px;
-    width: 40px;
-  }
-
 .footer {
   background-color: var(--secondary-bg);
   text-align: center;
@@ -1268,6 +1319,14 @@ img {
     color: var(--black);
     margin-top: 25px;
   }
+
+.cta__button:hover {
+      color: var(--white);
+    }
+
+.cta__button:after {
+      background-color: var(--black);
+    }
 
 .i-about {
   background-color: var(--secondary-bg);
@@ -1924,13 +1983,6 @@ img {
     display: block;
     border: none;
     margin: 0 auto;
-    letter-spacing: 1px;
-    background-color: var(--main-color);
-    background-image: url(/src/img/plane.svg);
-    background-repeat: no-repeat;
-    background-position: 90% 50%;
-    background-size: 20px 20px;
-    padding-right: 45px;
   }
 
 @media (min-width: 768px) {
@@ -1938,6 +1990,11 @@ img {
 .contact__submit {
       display: inline-block
   }
+  }
+
+.contact__plane {
+    width: 20px;
+    margin-left: 5px;
   }
 
 .contact__aside {

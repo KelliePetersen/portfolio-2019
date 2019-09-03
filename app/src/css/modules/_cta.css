@@ -18,5 +18,13 @@
     background-color: var(--white);
     color: var(--black);
     margin-top: 25px;
+
+    &:hover {
+      color: var(--white);
+    }
+    
+    &:after {
+      background-color: var(--black);
+    }
   }
 }

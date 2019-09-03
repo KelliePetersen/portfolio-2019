@@ -87,17 +87,14 @@
     display: block;
     border: none;
     margin: 0 auto;
-    letter-spacing: 1px;
-    background-color: var(--main-color);
-    background-image: url(/src/img/plane.svg);
-    background-repeat: no-repeat;
-    background-position: 90% 50%;
-    background-size: 20px 20px;
-    padding-right: 45px;
-
     @mixin atMedium {
       display: inline-block;
     }
+  }
+
+  &__plane {
+    width: 20px;
+    margin-left: 5px;
   }
 
   &__aside {

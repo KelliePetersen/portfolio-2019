@@ -61,7 +61,7 @@
         href="mailto:contact@kelliepetersen.com">contact@kelliepetersen.com</a></li>
     <li class="nav__section nav__email"><a href="mailto:contact@kelliepetersen.com"><img src="src/img/email.svg"
           alt="Email icon" class="nav__email-icon"></a></li>
-    <li class="nav__section"><a class="button button--oval" href="contact.html">Contact</a></li>
+    <li class="nav__section"><a class="button button--oval button--solid" href="contact.html">Contact</a></li>
   </ul>
 </nav>
 
@@ -97,7 +97,10 @@
       <h1 class="hero__heading"><span class="hero__heading-span">Hi, <span class="hero__span">I'm </span></span>Kellie.</h1>
       <p class="hero__subheading">I'm a front-end developer and wannabe designer currently working for <a href="http://www.novelleweb.com" target="_blank" class="hero__link">Novelle Web & Software</a>.
       <span class="hero__subheading-span">I'm available for work on small projects.</span></p>
-      <a href="#contact" class="button hero__button">Get in touch<img src="src/img/arrow.svg" class="hero__arrow"/></a>
+      <div class="button__container">
+        <a href="#contact" class="button button--big button--solid">Get in touch</a>
+        <img src="src/img/arrow.svg" class="button__arrow button__arrow--big"/>
+      </div>
     </div>
   </div>
 
@@ -109,7 +112,10 @@
         <p class="text__paragraph">I'm Kellie, a front-end developer who sometimes attempts designing things. I grew up in Yeppoon, Australia.
           I moved to the USA 2 years ago, and I'm currently based in Atlanta, Georgia. I love turning interesting ideas into
         usable products.</p>
-        <a href="about.html" class="button i-about__button">More about me<img src="src/img/arrow.svg" class="button__arrow" /></a>
+        <div class="button__container i-about__button">
+          <a href="about.html" class="button">More about me</a>
+          <img src="src/img/arrow.svg" class="button__arrow" />
+        </div>
       </div>
     </div>
   </section>
@@ -139,7 +145,10 @@
           <p class="text__small-heading">ACCESSIBLE</p>
           <p class="text__paragraph i-skills__text">Lorem ipsum dolor sit amet, adipiscing elit, sed do eiusmod ut labore et dolore magna aliqua.</p>
         </div>
-        <a href="skills.html" class="button i-skills__button">All my skills<img src="src/img/arrow.svg" class="button__arrow" /></a>
+        <div class="button__container i-skills__button">
+          <a href="about.html" class="button">All my skills</a>
+          <img src="src/img/arrow.svg" class="button__arrow" />
+        </div>
       </div>
     </div>
   </section>
@@ -156,7 +165,10 @@
         </div>
         <p class="text__paragraph text--hidden">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ut labore et dolore magna aliqua.</p>
         <p class="text__paragraph text--hidden-at-m">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ut labore et dolore magna aliqua.</p>
-        <a href="http://www.novelleweb.com" target="_blank" class="button projects__button">View website<img src="src/img/arrow.svg" class="button__arrow" /></a>
+        <div class="button__container">
+          <a href="http://www.novelleweb.com" target="_blank" class="button projects__button">View website</a>
+          <img src="src/img/arrow.svg" class="button__arrow" />
+        </div>
       </div>
       <img src="src/img/novelle.jpg" alt="A screenshot of the Novelle landing page" class="projects__image">
     </div>
@@ -170,7 +182,10 @@
         </div>
         <p class="text__paragraph text--hidden">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ut labore et dolore magna aliqua.</p>
         <p class="text__paragraph text--hidden-at-m">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ut labore et dolore magna aliqua.</p>
-        <a href="http://www.raphawalk.com" target="_blank" class="button projects__button">View website<img src="src/img/arrow.svg" class="button__arrow" /></a>
+        <div class="button__container">
+          <a href="http://www.raphawalk.com" target="_blank" class="button projects__button">View website</a>
+          <img src="src/img/arrow.svg" class="button__arrow" />
+        </div>
       </div>
       <img src="src/img/rapha.jpg" alt="A screenshot of the Rapha Walk landing page" class="projects__image">
     </div>
@@ -184,7 +199,10 @@
         </div>
         <p class="text__paragraph text--hidden">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ut labore et dolore magna aliqua.</p>
         <p class="text__paragraph text--hidden-at-m">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ut labore et dolore magna aliqua.</p>
-        <a href="https://kelliepetersen.github.io/capricorn-coast/" target="_blank" class="button projects__button">View website<img src="src/img/arrow.svg" class="button__arrow" /></a>
+        <div class="button__container">
+          <a href="https://kelliepetersen.github.io/capricorn-coast/" target="_blank" class="button projects__button">View website</a>
+          <img src="src/img/arrow.svg" class="button__arrow" />
+        </div>
       </div>
       <img src="src/img/capricorncoast.jpg" alt="A screenshot of the Capricorn Coast landing page" class="projects__image">
     </div>
@@ -205,7 +223,7 @@
   <div>
     <input type="hidden" name="*redirect" value="https://kelliepetersen.github.io/portfolio/contact.html" />
     <input type="hidden" name="*honeypot" />
-    <input type="submit" value="Send message" class="button contact__submit" />
+    <button type="submit" class="button button--solid contact__submit">Send message<img src="src/img/plane.svg" class="contact__plane" /></button>
     <p class="contact__aside">or email me at <a href="mailto:contact@kelliepetersen.com"
         class="contact__aside-span">contact@kelliepetersen.com</a></p>
   </div>
