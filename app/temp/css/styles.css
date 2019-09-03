@@ -1045,7 +1045,13 @@ img {
     padding: 16px 34px;
     font-size: 0.875em;
     background-color: var(--main-color);
+    transition: 0.5s;
   }
+
+.button--oval:hover {
+      background-color: transparent;
+      
+    }
 
 .shape__diamond {
     display: inline-block;
@@ -1861,6 +1867,7 @@ img {
     margin-bottom: 20px;
     background-color: transparent;
     color: var(--gray);
+    outline: none;
   }
 
 .contact__input {
@@ -1868,10 +1875,18 @@ img {
     border-bottom: solid 2px var(--dark-gray);
   }
 
+.contact__input:focus {
+      border-bottom: solid 2px var(--main-color);
+    }
+
 .contact__message {
     margin-top: 5px;
     border: solid 2px var(--dark-gray);
   }
+
+.contact__message:focus {
+      border: solid 2px var(--main-color);
+    }
 
 .contact__submit {
     display: block;

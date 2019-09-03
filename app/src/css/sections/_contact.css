@@ -33,16 +33,23 @@
     margin-bottom: 20px;
     background-color: transparent;
     color: var(--gray);
+    outline: none;
   }
 
   &__input {
     border: none;
     border-bottom: solid 2px var(--dark-gray);
+    &:focus {
+      border-bottom: solid 2px var(--main-color);
+    }
   }
 
   &__message {
     margin-top: 5px;
     border: solid 2px var(--dark-gray);
+    &:focus {
+      border: solid 2px var(--main-color);
+    }
   }
 
   &__submit {

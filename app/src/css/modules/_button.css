@@ -27,5 +27,11 @@
     padding: 16px 34px;
     font-size: 0.875em;
     background-color: var(--main-color);
+    transition: 0.5s;
+
+    &:hover {
+      background-color: transparent;
+      
+    }
   }
 }

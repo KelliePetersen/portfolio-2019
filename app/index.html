@@ -194,18 +194,21 @@
     <h2 class="text__heading text--no-margin text--center">Let's talk.</h2>
     <p class="contact__text text__paragraph">Feel free to contact me by email or social media.
       I'm currently available for freelance work on small projects and salary positions. Thank you.</p>
-    <form action="POST" class="contact__form">
-      <label for="name" class="contact__label">Name</label>
-      <input type="text" name="name" required class="contact__input"/>
-      <label for="email" class="contact__label">Email</label>
-      <input type="email" name="email" required class="contact__input"/>
-      <label for="message" class="contact__label">Message</label>
-      <textarea name="message" cols="30" rows="10" required class="contact__message"></textarea>
-      <div>
-        <input type="submit" value="Send message" class="button contact__submit"/>
-        <p class="contact__aside">or email me at <a href="mailto:contact@kelliepetersen.com" class="contact__aside-span">contact@kelliepetersen.com</a></p>
-      </div>
-    </form>
+    
+    <form method="POST" action="index.php" class="contact__form">
+  <label for="name" class="contact__label">Name</label>
+  <input type="text" name="name" required class="contact__input" />
+  <label for="email" class="contact__label">Email</label>
+  <input type="email" name="email" required class="contact__input" />
+  <label for="message" class="contact__label">Message</label>
+  <textarea name="message" cols="30" rows="10" required class="contact__message"></textarea>
+  <div>
+    <input type="submit" value="Send message" class="button contact__submit" />
+    <p class="contact__aside">or email me at <a href="mailto:contact@kelliepetersen.com"
+        class="contact__aside-span">contact@kelliepetersen.com</a></p>
+  </div>
+</form>
+    
   </section>
 
 <footer class="footer">
