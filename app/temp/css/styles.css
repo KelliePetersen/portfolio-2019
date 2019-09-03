@@ -1879,6 +1879,15 @@ img {
       border-bottom: solid 2px var(--main-color);
     }
 
+.contact__input:-webkit-autofill,
+    .contact__input:-webkit-autofill:hover,
+    .contact__input:-webkit-autofill:focus,
+    .contact__input:-webkit-autofill:active  {
+      transition: background-color 5000s ease-in-out 0s;
+      -webkit-text-fill-color: var(--white);
+      caret-color: var(--white);
+}
+
 .contact__message {
     margin-top: 5px;
     border: solid 2px var(--dark-gray);
