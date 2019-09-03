@@ -1960,7 +1960,13 @@ img {
     color: var(--white);
     text-decoration: none;
     border-bottom: 1px solid var(--white);
+    transition: 0.3s;
   }
+
+.contact__aside-span:hover {
+      color: var(--main-color);
+      border-color: var(--main-color);
+    }
 
 .contact--required {
     border-color: red !important;
