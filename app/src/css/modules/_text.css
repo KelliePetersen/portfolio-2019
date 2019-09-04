@@ -25,7 +25,7 @@
   }
 
   &__heading {
-    responsive-font-size: 4.5rem;
+    responsive-font-size: 4rem;
     margin: 0;
     margin-bottom: calc(30px + 1vmin);
   }
