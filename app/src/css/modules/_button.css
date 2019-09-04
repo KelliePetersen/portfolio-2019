@@ -60,6 +60,9 @@
   &--big {
     font-size: 1em;
     padding: 18px 34px;
+    @mixin atMedium {
+      margin-left: 6px;
+    }
   }
 
   &--solid:before {
