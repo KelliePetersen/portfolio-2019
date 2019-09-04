@@ -155,11 +155,18 @@
   }
 
   &__city {
+    position: relative;
     width: 100%;
     max-width: 750px;
     @mixin atLarge {
       margin: 50px 0 0 auto;
     }
+  }
+
+  &__lights {
+    position: absolute;
+    top: 0;
+    left: 0;
   }
   
   &--margin {

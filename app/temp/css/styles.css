@@ -1937,6 +1937,7 @@ img {
   }
 
 .about__city {
+    position: relative;
     width: 100%;
     max-width: 750px;
   }
@@ -1946,6 +1947,12 @@ img {
 .about__city {
       margin: 50px 0 0 auto
   }
+  }
+
+.about__lights {
+    position: absolute;
+    top: 0;
+    left: 0;
   }
 
 .about--margin {
