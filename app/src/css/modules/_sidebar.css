@@ -54,6 +54,8 @@
 
   &__container {
     position: relative;
+    width: 35px;
+    height: 35px;
   }
 
   &__icon:hover + &__description {
@@ -61,7 +63,7 @@
     opacity: 1;
   }
 
-  &__resume {
+  &__background {
     position: relative;
     width: 35px;
     height: 35px;
@@ -92,18 +94,10 @@
     top: 25px;
   }
 
-  &__heart-container {
-    position: relative;
-    width: 35px;
-    height: 35px;
-    background-color: whitesmoke;
-    border-radius: 50%;
-  }
-
   &__heart {
     position: absolute;
-    top: 60%;
-    left: 50%;
+    top: 58%;
+    left: 49%;
     transform: translate(-50%, -50%);
     width: 25px;
     height: 22.5px;

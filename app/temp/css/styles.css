@@ -1044,6 +1044,8 @@ img {
 
 .sidebar__container {
     position: relative;
+    width: 35px;
+    height: 35px;
   }
 
 .sidebar__icon:hover + .sidebar__description {
@@ -1051,7 +1053,7 @@ img {
     opacity: 1;
   }
 
-.sidebar__resume {
+.sidebar__background {
     position: relative;
     width: 35px;
     height: 35px;
@@ -1082,18 +1084,10 @@ img {
     top: 25px;
   }
 
-.sidebar__heart-container {
-    position: relative;
-    width: 35px;
-    height: 35px;
-    background-color: whitesmoke;
-    border-radius: 50%;
-  }
-
 .sidebar__heart {
     position: absolute;
-    top: 60%;
-    left: 50%;
+    top: 58%;
+    left: 49%;
     transform: translate(-50%, -50%);
     width: 25px;
     height: 22.5px;
