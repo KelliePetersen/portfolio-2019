@@ -1060,6 +1060,18 @@ img {
     margin-bottom: 15vmin;
   }
 
+.text--block {
+    display: block;
+    margin-top: 10px;
+  }
+
+@media (min-width: 768px) {
+
+.text--block {
+      display: inline
+  }
+  }
+
 .text--hidden {
     display: none;
   }
@@ -1356,6 +1368,33 @@ img {
     text-decoration: none;
     color: var(--white);
   }
+
+@media (min-width: 768px) {
+
+.hero--small {
+      min-height: 550px;
+      height: 75vh
+  }
+  }
+
+@media (min-width: 768px) {
+
+.hero--small .hero__container {
+        top: 60%
+    }
+  }
+
+.hero--small .hero__subheading {
+      font-size: 1.25rem;
+      line-height: 1.75;
+    }
+
+@media (max-width: 768px), (max-height: 768px) {
+
+  .hero--small .hero__subheading {
+      font-size: calc(1.00625rem + 0.50781vmin);
+  }
+}
 
 .footer {
   background-color: var(--secondary-bg);
@@ -2134,9 +2173,17 @@ img {
 
 .contact-page {
   width: 100vw;
-  min-height: 100vh;
+  min-height: 1000px;
+  height: 100vh;
   position: relative;
 }
+
+@media (min-width: 1200px) {
+
+.contact-page {
+    min-height: 700px
+}
+  }
 
 .contact-page__container {
     padding-top: 20vh;

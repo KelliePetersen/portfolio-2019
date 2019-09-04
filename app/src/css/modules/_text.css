@@ -67,6 +67,14 @@
     margin-bottom: 15vmin;
   }
 
+  &--block {
+    display: block;
+    margin-top: 10px;
+    @mixin atMedium {
+      display: inline;
+    }
+  }
+
   &--hidden {
     display: none;
     @mixin atMedium {
