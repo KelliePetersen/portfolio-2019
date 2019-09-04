@@ -1374,30 +1374,15 @@ img {
     color: var(--white);
   }
 
-@media (min-width: 768px) {
-
 .hero--small {
-      min-height: 550px;
-      height: 75vh
+    font-size: 1.25rem;
+    line-height: 1.75;
   }
-  }
-
-@media (min-width: 768px) {
-
-.hero--small .hero__container {
-        top: 60%
-    }
-  }
-
-.hero--small .hero__subheading {
-      font-size: 1.25rem;
-      line-height: 1.75;
-    }
 
 @media (max-width: 768px), (max-height: 768px) {
 
-  .hero--small .hero__subheading {
-      font-size: calc(1.00625rem + 0.50781vmin);
+  .hero--small {
+    font-size: calc(1.00625rem + 0.50781vmin);
   }
 }
 

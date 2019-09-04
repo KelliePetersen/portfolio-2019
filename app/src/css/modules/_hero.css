@@ -80,20 +80,7 @@
   }
 
   &--small {
-    @mixin atMedium {
-      min-height: 550px;
-      height: 75vh;
-    }
-
-    & .hero__container {
-      @mixin atMedium {
-        top: 60%;
-      }
-    }
-
-    & .hero__subheading {
-      responsive-font-size: 1.25rem;
-      line-height: 1.75;
-    }
+    responsive-font-size: 1.25rem;
+    line-height: 1.75;
   }
 }
