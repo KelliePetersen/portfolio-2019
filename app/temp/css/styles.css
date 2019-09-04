@@ -1055,27 +1055,67 @@ img {
     position: relative;
     width: 35px;
     height: 35px;
+    background-color: whitesmoke;
+    border-radius: 50%;
   }
 
 .sidebar__row {
     position: absolute;
-    width: 90%;
+    width: 60%;
     height: 2px;
-    background-color: var(--white);
+    background-color: var(--main-bg);
+    top: 10px;
+    left: 7px;
   }
 
 .sidebar__row:nth-of-type(2) {
-    width: 60%;
-    top: 9px;
+    width: 40%;
+    top: 15px;
   }
 
 .sidebar__row:nth-of-type(3) {
-    top: 18px;
+    top: 20px;
   }
 
 .sidebar__row:nth-of-type(4) {
-    width: 60%;
-    top: 27px;
+    width: 40%;
+    top: 25px;
+  }
+
+.sidebar__heart-container {
+    position: relative;
+    width: 35px;
+    height: 35px;
+    background-color: whitesmoke;
+    border-radius: 50%;
+  }
+
+.sidebar__heart {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 25px;
+    height: 22.5px;
+  }
+
+.sidebar__heart:before, .sidebar__heart:after {
+    position: absolute;
+    content: "";
+    left: 12.5px;
+    top: 0;
+    width: 12.5px;
+    height: 20px;
+    background: var(--main-bg);
+    border-radius: 12.5px 12.5px 0 0;
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
+  }
+
+.sidebar__heart:after {
+    left: 0;
+    transform: rotate(45deg);
+    transform-origin :100% 100%;
   }
 
 .text__section {
