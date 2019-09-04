@@ -71,6 +71,7 @@
     position: absolute;
     bottom: calc(20vmin - 30px);
     left: calc(20vmin - 50px);
+    z-index: 1;
 
     @mixin atMedium {
       position: static;
@@ -83,6 +84,7 @@
     height: 100%;
     object-fit: cover;
     background-color: var(--darkest-gray);
+    opacity: 0.9;
   }
 
   &__container:nth-of-type(2) .projects__image {

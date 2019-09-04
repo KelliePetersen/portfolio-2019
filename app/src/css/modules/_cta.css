@@ -22,6 +22,10 @@
     &:hover {
       color: var(--white);
     }
+
+    &:before {
+      border: none;
+    }
     
     &:after {
       background-color: var(--black);

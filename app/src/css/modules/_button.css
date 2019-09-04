@@ -4,12 +4,12 @@
   display: block;
   background: none;
   color: var(--white);
-  border: 2px solid var(--main-color);
+  border: 2px solid transparent;
   font-family: 'Poppins', 'Montserrat', sans-serif;
   font-weight: 500;
   font-size: 0.875em;
   text-decoration: none;
-  padding: 15px 25px;
+  padding: 18px 25px;
   width: max-content;
   overflow: hidden;
   transition: 0.2s;
@@ -19,14 +19,21 @@
     font-size: 1em;
   }
 
-  &:hover {
-    border-color: var(--secondary-color);
+  &:before {
+    content: "";
+    position: absolute;
+    border: 2px solid var(--main-color);
+    bottom: 0;
+    right: 0;
+    left: 1px;
+    top: 1px;
+    z-index: -2;
   }
 
   &:after {
     content: "";
     position: absolute;
-    background-color: var(--secondary-color);
+    background-color: var(--main-color);
     bottom: 0;
     right: 100%;
     left: 0;
@@ -74,6 +81,10 @@
     left: 0;
     z-index: -2;
     background-color: var(--main-color);
+  }
+
+  &--solid:after {
+    background-color: var(--secondary-color)
   }
 
   &--oval {
