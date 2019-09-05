@@ -41,6 +41,44 @@
   }
 
   &__icon {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    transition: transform 0.3s;
+    border-radius: 50%;
+    
+    &:hover {
+      transform: scale(1.1);
+    }
+
+    &:nth-of-type(1) {
+      background-color: #e4ba42;
+    }
+    
+    &:nth-of-type(2) {
+      background-color: #0078cf;
+    }
+
+    &:nth-of-type(1), &:nth-of-type(2), &:nth-of-type(6) {
+      border: 5px solid var(--main-bg);
+    }
+  }
+
+
+  &__logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    margin: 0;
+    user-select: none;
+    color: var(--white);
+    font-weight: 700;
+  }
+
+  &__development, &__methods {
     width: 100px;
     height: 100px;
     background-color: var(--dark-gray);
