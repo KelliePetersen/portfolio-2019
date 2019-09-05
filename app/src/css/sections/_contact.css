@@ -34,7 +34,7 @@
 
     &--is-focus {
       bottom: 5px;
-      color: var(--secondary-color);
+      color: var(--main-color);
     }
 
     &--required {

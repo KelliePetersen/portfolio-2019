@@ -1,3 +1,3 @@
 ## My Portfolio
 
-My 2019 Portfolio. 
+This is the first version of my 2019 front-end developer portfolio.

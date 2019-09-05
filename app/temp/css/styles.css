@@ -356,8 +356,8 @@ template {
   --dark-gray: #3c3c3c;
   --darkest-gray: #252525;
   --main-color: #7555ff;
-  /* --secondary-color: #fc2e5a; */
-  --secondary-color: #9883f8;
+  --secondary-color: #fc2e5a;
+  /* --secondary-color: #9883f8; */
   /* --secondary-color: #ffcd55; */
   --main-bg: #1e1e1e;
   --secondary-bg: #212121;
@@ -1521,7 +1521,7 @@ img {
     }
 
 .cta {
-  background-image: linear-gradient(to right, var(--main-color), var(--secondary-color));
+  background-image: linear-gradient(to right, var(--main-color), #9883f8);
   background-color: var(--main-color);
   display: grid;
   align-items: center;
@@ -2208,7 +2208,7 @@ img {
 
 .contact__label--is-focus {
       bottom: 5px;
-      color: var(--secondary-color);
+      color: var(--main-color);
     }
 
 .contact__label--required {
